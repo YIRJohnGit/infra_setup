@@ -10,3 +10,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/install_docker.sh)"
 ```
+
+###### ***Terraform Installation***
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/install_terraformv01.sh)"
+```
