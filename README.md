@@ -5,3 +5,8 @@
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/install_aws_cli_v01.sh)"
 ```
+
+###### ***Docker Installation***
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/install_docker.sh)"
+```
