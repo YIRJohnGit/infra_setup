@@ -1,5 +1,10 @@
 # Setting Up Infrastructure 
-### Used IN Linux ###
+### Used IN Linux Ubuntu ###
+
+###### ***Setting Up Default Setting for New Machine***
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/default_utility.sh)"
+```
 
 ###### ***Setting Up AWS CLi***
 ```
