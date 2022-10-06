@@ -1,103 +1,139 @@
 
 ```
 sudo apt update
+sudo apt-get install -y apt-transport-https curl 
+sudo apt-get install -y openssh-server
+sudo apt-get install -y ssh 
+ssh-keygen
+sudo apt update
 ```
-
+```
 java -version
+```
+```
 sudo apt install -y default-jre
 java -version
+```
+```
 #sudo apt install -y default-jdk
 sudo apt install -y openjdk-8-jdk
+```
+```
+sudo nano /etc/hosts # 127.0.0.1 localhost 
+```
+	
+### ***User Creation from Hadoop User*** ###
 
+```
+sudo addgroup hadoop 
+sudo adduser --ingroup hadoop hduser 
+sudo usermod -a -G sudo hduser 
+su hduser 
+```
+## Restart the system ###
+```
+sudo reboot
+```
 
-$ sudo apt-get install -y apt-transport-https curl 
-$ sudo apt-get install -y openssh-server
-$ sudo apt-get install -y ssh 
-$ ssh-keygen
+## Login to hduser ##
+```
+sudo apt-get install ssh 
+ssh-keygen 
+sudo cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+ssh localhost 
+```
 
-$ sudo nano /etc/hosts 
-	127.0.0.1 localhost 
-
-
-$ sudo addgroup hadoop 
-$ sudo adduser --ingroup hadoop hduser 
-$ sudo usermod -a -G sudo hduser 
-$ su hduser 
-
-
-$ sudo apt-get install -y ssh
-$ ssh-keygen 
-
-$ sudo cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
-$ ssh localhost 
-
+## Edit the file and disable IPV6 ##
+```
 $ sudo nano /etc/sysctl.conf
-	net.ipv6.conf.all.disable_ipv6 = 1
-	net.ipv6.conf.default.disable_ipv6 = 1
-	net.ipv6.conf.lo.disable_ipv6 = 1
+```
+```
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+```
 
-$ sudo reboot
+## Reboot the machine to make the changes and logon to hduser ##
+```
+sudo reboot
+```
 
-$ sudo update-alternatives --config javac
-or
-$ sudo update-java-alternatives -l
+#### get the Java Locatoin ####
+```
+sudo update-alternatives --config javac
+```
+#### or ####
+```
+sudo update-java-alternatives -l
+```
 
-IF NOT FOUND JAVAC
-sudo apt install openjdk-8-jdk-headless
-or
+## IF NOT FOUND JAVAC ##
+```
 sudo apt install -y openjdk-8-jdk
-
+```
 There is only one alternative in link group javac (providing /usr/bin/javac): /usr/lib/jvm/java-11-openjdk-amd64/bin/javac
 Nothing to configure.
 
-$ cd Downloads
+```
+cd Downloads
+sudo wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz # Please download using URL to download complete file
+```
 
+```
+cd /usr/local 
+sudo tar -xf $HOME/Downloads/hadoop-3.3.3.tar.gz
+sudo chmod 777 hadoop-3.3.3
+```
 
-$ sudo wget https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz # Please download using URL to download complete file
-OR
-$ sudo wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz
+```
+sudo nano $HOME/.bashrc 
+```
+```
+# Set Hadoop-related environment variables  export 
+HADOOP_HOME=/usr/local/hadoop-3.3.3  
 
-$ cd /usr/local 
-$ sudo tar -xf $HOME/Downloads/hadoop-3.3.3.tar.gz
-$ sudo chmod 777 hadoop-3.3.3
-$ sudo nano $HOME/.bashrc 
-
-	# Set Hadoop-related environment variables  export 
-	HADOOP_HOME=/usr/local/hadoop-3.3.3  
-
-	# Set JAVA home directory 
-	export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+# Set JAVA home directory 
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 	
-	#Set aliases and functions for running Hadoop-related commands 
-	unalias fs &> /dev/null 
-	alias fs="hadoop fs"  
-	unaliash ls &> /dev/null 
-	alias hls="fs-ls" 
+#Set aliases and functions for running Hadoop-related commands 
+unalias fs &> /dev/null 
+alias fs="hadoop fs"  
+unaliash ls &> /dev/null 
+alias hls="fs-ls" 
 
-	#Add Hadoop bin/ directory to PATH 
-	export PATH=$PATH:$HADOOP_HOME/bin
+#Add Hadoop bin/ directory to PATH 
+export PATH=$PATH:$HADOOP_HOME/bin
+```
 
-$ sudo nano /etc/profile
-	# Insert JAVA_HOME 
-	JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-	
-	# Insert  HADOOP_HOME 
-	HADOOP_HOME=/usr/local/hadoop-3.3.3 
-	
-	#--in PATH variable just append at the end of the line 
-	PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin 
-	
-	#--Append HADOOP_HOME at end of the export statement  
-	export PATH JAVA_HOME HADOOP_HOME  
+```
+sudo nano /etc/profile
+```
+```
+# Insert JAVA_HOME 
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
+# Insert  HADOOP_HOME 
+HADOOP_HOME=/usr/local/hadoop-3.3.3 
 
-$ source $HOME/.bashrc 
-$ source /etc/profile 
-$ cd $HADOOP_HOME
-$ cd etc/hadoop 
+#--in PATH variable just append at the end of the line 
+PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin 
 
+#--Append HADOOP_HOME at end of the export statement  
+export PATH JAVA_HOME HADOOP_HOME  
+```
+
+```
+source $HOME/.bashrc 
+source /etc/profile 
+```
+```
+cd $HADOOP_HOME
+cd etc/hadoop 
+```
+```
 $ pwd
-/usr/local/hadoop-3.3.3/etc/hadoop
+```
+### /usr/local/hadoop-3.3.3/etc/hadoop ###
 
 
 $ sudo nano hadoop-env.sh
