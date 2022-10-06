@@ -119,7 +119,7 @@ sudo nano $HOME/.bashrc
 HADOOP_HOME=/usr/local/hadoop-3.3.3  
 
 # Set JAVA home directory 
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 	
 #Set aliases and functions for running Hadoop-related commands 
 unalias fs &> /dev/null 
