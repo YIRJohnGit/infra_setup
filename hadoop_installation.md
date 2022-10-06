@@ -236,6 +236,7 @@ cd $HADOOP_HOME/sbin
 ./start-all.sh 
 jps 
 ```
+**_Note: The above command will take time to initialize, please be patient_** 
 
 ## Check Hadoop GUI in browser ##
 ```
