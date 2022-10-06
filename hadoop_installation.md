@@ -97,6 +97,7 @@ sudo apt install -y openjdk-8-jdk
 There is only one alternative in link group javac (providing /usr/bin/javac): /usr/lib/jvm/java-11-openjdk-amd64/bin/javac
 Nothing to configure.
 
+## Download & Install Hadoop ##
 ```
 cd Downloads
 sudo wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz # Please download using URL to download complete file
