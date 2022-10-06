@@ -135,61 +135,77 @@ $ pwd
 ```
 ### /usr/local/hadoop-3.3.3/etc/hadoop ###
 
+```
+sudo nano hadoop-env.sh
+```
+```
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export HADOOP_HOME=/usr/local/hadoop-3.3.3
+```
 
-$ sudo nano hadoop-env.sh
-	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-	export HADOOP_HOME=/usr/local/hadoop-3.3.3
-
-
-$ sudo mkdir -p /app/hadoop/tmp 
-$ sudo chown hduser:hadoop /app/hadoop/tmp  
-
-$ sudo nano core-site.xml
-
-	<configuration>
-		<property> 
-			<name>hadoop.tmp.dir</name> 
-			<value>/app/hadoop/tmp</value> 
-		</property> 
-		<property> 
-			<name>fs.default.name</name> 
-			<value>hdfs://localhost:9000</value> 
-		</property>  
-	</configuration>
-
-
-$ sudo nano mapred-site.xml
+```
+sudo mkdir -p /app/hadoop/tmp 
+sudo chown hduser:hadoop /app/hadoop/tmp  
+```
+```
+sudo nano core-site.xml
+```
+```
+<configuration>
 	<property> 
-		<name>mapreduce.framework.name</name> 
-		<value>yarn</value> 
+		<name>hadoop.tmp.dir</name> 
+		<value>/app/hadoop/tmp</value> 
 	</property> 
-
-
-$ sudo nano hdfs-site.xml 
 	<property> 
-		<name>dfs.replication</name> 
-		<value>1</value> 
+		<name>fs.default.name</name> 
+		<value>hdfs://localhost:9000</value> 
 	</property>  
+</configuration>
+```
+```
+sudo nano mapred-site.xml
+```
+```
+<property> 
+	<name>mapreduce.framework.name</name> 
+	<value>yarn</value> 
+</property> 
+```
 
-$ sudo nano yarn-site.xml 
-	<property> 
-		<name>yarn.nodemanager.aux-services</name> 
-		<value>mapreduce_shuffle</value> 
-	</property>  
+```
+sudo nano hdfs-site.xml 
+<property> 
+	<name>dfs.replication</name> 
+	<value>1</value> 
+</property>  
+```
 
-$ cd ../../bin 
+```
+sudo nano yarn-site.xml 
+```
+<property> 
+	<name>yarn.nodemanager.aux-services</name> 
+	<value>mapreduce_shuffle</value> 
+</property>  
+```
 
-$ readlink -f $(which java) # Verify Java Location
-	result
-	/usr/lib/jvm/java-11-openjdk-amd64/bin/java
+```
+cd ../../bin 
+readlink -f $(which java) # Verify Java Location
+```
+***result: /usr/lib/jvm/java-11-openjdk-amd64/bin/java***
 
-$ hadoop namenode -format
+```
+hadoop namenode -format
+```
 
-$ cd ../sbin 
+```
+cd $HADOOP_HOME/sbin
+./start-all.sh 
+jps 
+```
 
-$ cd $HADOOP_HOME/sbin
-$ ./start-all.sh 
-$ jps 
-
-Check Hadoop GUI in browser
+## Check Hadoop GUI in browser ##
+```
 localhost:9870 
+```
