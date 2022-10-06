@@ -135,17 +135,17 @@ export PATH=$PATH:$HADOOP_HOME/bin
 sudo nano /etc/profile
 ```
 ```
-# Insert JAVA_HOME 
-JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+# Insert JAVA_HOME
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
-# Insert  HADOOP_HOME 
-HADOOP_HOME=/usr/local/hadoop-3.3.3 
+# Insert  HADOOP_HOME
+HADOOP_HOME=/usr/local/hadoop-3.3.3
 
-#--in PATH variable just append at the end of the line 
-PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin 
+#--in PATH variable just append at the end of the line
+PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin
 
-#--Append HADOOP_HOME at end of the export statement  
-export PATH JAVA_HOME HADOOP_HOME  
+#--Append HADOOP_HOME at end of the export statement
+export PATH JAVA_HOME HADOOP_HOME
 ```
 
 ```
