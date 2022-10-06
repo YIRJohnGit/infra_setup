@@ -5,3 +5,4 @@ sudo apt install -y apt-transport-https ca-certificates curl software-properties
 sudo apt install -y ssh
 sudo apt install -y openssh-server
 sudo apt install -y git # Install Git
+ssh-keygen
