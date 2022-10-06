@@ -67,7 +67,7 @@ ssh localhost
 
 ## Edit the file and disable IPV6 ##
 ```
-$ sudo nano /etc/sysctl.conf
+sudo nano /etc/sysctl.conf
 ```
 ```
 net.ipv6.conf.all.disable_ipv6 = 1
