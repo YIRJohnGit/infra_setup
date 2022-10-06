@@ -102,6 +102,8 @@ Nothing to configure.
 cd Downloads
 sudo wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz # Please download using URL to download complete file
 ```
+***Make sure you have 100% Download Complete***
+![image](https://user-images.githubusercontent.com/111234771/194428956-0a9ea0df-6954-487a-b478-ec7d36c8defc.png)
 
 ```
 cd /usr/local 
