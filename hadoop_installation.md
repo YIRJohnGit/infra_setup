@@ -225,7 +225,7 @@ sudo nano yarn-site.xml
 cd ../../bin 
 readlink -f $(which java) # Verify Java Location
 ```
-***result: /usr/lib/jvm/java-11-openjdk-amd64/bin/java***
+![image](https://user-images.githubusercontent.com/111234771/194431744-cc2226a3-f778-4741-aa35-af1aa9538197.png)
 
 ```
 hadoop namenode -format
