@@ -35,9 +35,15 @@ sudo nano /etc/hosts # 127.0.0.1 localhost
 ### ***User Creation from Hadoop User*** ###
 
 ```
-sudo addgroup hadoop 
+sudo addgroup hadoop
+```
+```
 sudo adduser --ingroup hadoop hduser 
+```
+```
 sudo usermod -a -G sudo hduser 
+```
+```
 su hduser 
 ```
 ## Restart the system ###
