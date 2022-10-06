@@ -1,4 +1,4 @@
-
+# Single Node Hadoop Installation on Ubuntu 22 #
 ```
 sudo apt update
 ```
