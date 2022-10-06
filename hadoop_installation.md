@@ -195,30 +195,36 @@ sudo nano core-site.xml
 sudo nano mapred-site.xml
 ```
 ```
-<property> 
-	<name>mapreduce.framework.name</name> 
-	<value>yarn</value> 
-</property> 
+<configuration>
+	<property> 
+		<name>mapreduce.framework.name</name> 
+		<value>yarn</value> 
+	</property> 
+</configuration>
 ```
 
 ```
 sudo nano hdfs-site.xml 
 ```
 ```
-<property> 
-	<name>dfs.replication</name> 
-	<value>1</value> 
-</property>  
+<configuration>
+	<property> 
+		<name>dfs.replication</name> 
+		<value>1</value> 
+	</property>  
+</configuration>
 ```
 
 ```
 sudo nano yarn-site.xml 
 ```
 ```
-<property> 
-	<name>yarn.nodemanager.aux-services</name> 
-	<value>mapreduce_shuffle</value> 
-</property>  
+<configuration>
+	<property> 
+		<name>yarn.nodemanager.aux-services</name> 
+		<value>mapreduce_shuffle</value> 
+	</property>  
+</configuration>
 ```
 
 ```
