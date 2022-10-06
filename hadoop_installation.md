@@ -115,19 +115,19 @@ sudo chmod 777 hadoop-3.3.3
 sudo nano $HOME/.bashrc 
 ```
 ```
-# Set Hadoop-related environment variables  export 
-HADOOP_HOME=/usr/local/hadoop-3.3.3  
+# Set Hadoop-related environment variables
+export HADOOP_HOME=/usr/local/hadoop-3.3.3
 
-# Set JAVA home directory 
+# Set JAVA home directory
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-	
-#Set aliases and functions for running Hadoop-related commands 
-unalias fs &> /dev/null 
-alias fs="hadoop fs"  
-unaliash ls &> /dev/null 
-alias hls="fs-ls" 
 
-#Add Hadoop bin/ directory to PATH 
+#Set aliases and functions for running Hadoop-related commands
+unalias fs &> /dev/null
+alias fs="hadoop fs"
+unaliash ls &> /dev/null
+alias hls="fs-ls"
+
+#Add Hadoop bin/ directory to PATH
 export PATH=$PATH:$HADOOP_HOME/bin
 ```
 
