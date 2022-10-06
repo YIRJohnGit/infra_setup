@@ -87,7 +87,10 @@ sudo update-alternatives --config javac
 ![image](https://user-images.githubusercontent.com/111234771/194428412-47bcc3ca-56d9-4aac-a286-5edb138d1a51.png)
 #### or ####
 ```
-sudo update-java-alternatives -l
+sudo update-java-alternatives -l # Get the list of Java
+```
+```
+sudo update-alternatives --config java
 ```
 
 ## IF NOT FOUND JAVAC ##
