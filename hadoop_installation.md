@@ -237,6 +237,8 @@ cd $HADOOP_HOME/sbin
 jps 
 ```
 **_Note: The above command will take time to initialize, please be patient_** 
+**_The Successfull Setup will show the below result_** 
+![image](https://user-images.githubusercontent.com/111234771/194432514-7413c5d9-8926-4b9c-8640-83af1a140da8.png)
 
 ## Check Hadoop GUI in browser ##
 ```
