@@ -200,6 +200,8 @@ sudo nano mapred-site.xml
 
 ```
 sudo nano hdfs-site.xml 
+```
+```
 <property> 
 	<name>dfs.replication</name> 
 	<value>1</value> 
@@ -208,6 +210,7 @@ sudo nano hdfs-site.xml
 
 ```
 sudo nano yarn-site.xml 
+```
 ```
 <property> 
 	<name>yarn.nodemanager.aux-services</name> 
