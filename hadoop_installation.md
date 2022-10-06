@@ -53,9 +53,14 @@ sudo reboot
 
 ## Login to hduser ##
 ```
-sudo apt-get install ssh 
+sudo apt-get install -y ssh 
+```
+```
 ssh-keygen 
+```
+```
 sudo cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+```
 ssh localhost 
 ```
 
