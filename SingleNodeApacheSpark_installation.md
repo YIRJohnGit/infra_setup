@@ -1,3 +1,4 @@
+![Screenshot (643)](https://user-images.githubusercontent.com/111234771/194305312-dd8ac20d-2e0c-40f3-8bd1-0c9ed5c25691.png)
 ## Single Node Apache Spark Installation on Ubuntu 16.04 ##
 #### Step 1: Install Java  ####
 Java is the main prerequisite for Apache Spark. Install latest java. 
