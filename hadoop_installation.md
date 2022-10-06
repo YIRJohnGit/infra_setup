@@ -1,10 +1,20 @@
 
 ```
 sudo apt update
+```
+```
 sudo apt-get install -y apt-transport-https curl 
+```
+```
 sudo apt-get install -y openssh-server
+```
+```
 sudo apt-get install -y ssh 
+```
+```
 ssh-keygen
+```
+```
 sudo apt update
 ```
 ```
