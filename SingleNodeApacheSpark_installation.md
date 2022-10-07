@@ -13,7 +13,7 @@ java -version
  
 #### Step 3. Set the Known Hosts in /etc/hosts file ###
 ```
-sudo gedit /etc/hosts 
+sudo nano /etc/hosts 
 ```
 ```
 127.0.0.1 	localhost 
@@ -50,7 +50,7 @@ ssh localhost
 
 #### Step 6. Disable IPV6 by including the following lines in /etc/sysctl.conf file  #### 
 ```
-sudo gedit /etc/sysctl.conf 
+sudo nano /etc/sysctl.conf 
 ```  
 ```
 net.ipv6.conf.all.disable_ipv6 = 1
@@ -85,7 +85,7 @@ sudo chmod 777 spark-2.1.0-bin-hadoop2.7
 
 #### Step 10. Set the environment variables.   ####
 ```
-sudo gedit $HOME/.bashrc 
+sudo nano $HOME/.bashrc 
 ```
 Include the following lines in the $HOME/.bashrc file  
 
@@ -106,7 +106,7 @@ Then, Save and close the document
 
 #### Step 11. Set environment variables ####
 ```
-sudo gedit /etc/profile  
+sudo nano /etc/profile  
 ``` 
 Include the following lines /etc/profile file  
 ```
