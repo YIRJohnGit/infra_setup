@@ -63,8 +63,13 @@ Then, Save and close the document
 #### Step 7. To find the java path   ####
 sudo update-alternatives --config javac 
  
+# Scala and Spark Installation  #
 ### Step 8. Install Scala ###
 Download Scala and extract
+```
+cd ~/Downloads
+wget https://downloads.lightbend.com/scala/2.11.8/scala-2.11.8.deb
+```
 ```
 cd /usr/local  
 sudo tar -xvzf $HOME/Downloads/scala-2.12.1.tar.gz
