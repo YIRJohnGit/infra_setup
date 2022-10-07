@@ -29,6 +29,10 @@ java -version
 sudo apt install -y openjdk-8-jdk
 ```
 ```
+sudo nano /etc/hostname
+```
+Change the **_localhost_**
+```
 sudo nano /etc/hosts # 127.0.0.1 localhost 
 ```
 	
