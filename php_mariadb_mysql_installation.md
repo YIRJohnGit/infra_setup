@@ -53,10 +53,6 @@ sudo apt-get install -y php-cli # Install Pacakages
 ```
 sudo nano /var/www/html/info.php 
 ```
-
-	<?php
-	phpinfo();
-	?>
-
-
+```
 sudo echo "<?php phpinfo(); ?>" > index.php
+```
