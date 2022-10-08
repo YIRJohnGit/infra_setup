@@ -3,14 +3,23 @@
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04
 
 ```
-sudo apt install apache2
+sudo apt update && sudo apt -y upgrade
+sudo apt install -y apache2
 ```
 /var/www/html
-
+```
 sudo apt-get install -y php libapache2-mod-php  php-mysql
-
+```
+```
+sudo apt update && sudo apt install -y phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+```
 php-mcrypt
 
+_Finally, enable the mbstring PHP extension and restart Apache._
+```
+sudo phpenmod mbstring
+sudo service apache2 reload
+```
 **_We want to tell our web server to prefer PHP files, so we’ll make Apache look for an index.php file first_**
 
 ```
