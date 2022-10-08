@@ -11,24 +11,26 @@ sudo apt-get install -y php libapache2-mod-php  php-mysql
 
 php-mcrypt
 
-**__We want to tell our web server to prefer PHP files, so we’ll make Apache look for an index.php file first--**
+**_We want to tell our web server to prefer PHP files, so we’ll make Apache look for an index.php file first_**
 
 ```
 sudo nano /etc/apache2/mods-enabled/dir.conf
 ```
 
-__/etc/apache2/mods-enabled/dir.conf__
-Change the content from
+**_/etc/apache2/mods-enabled/dir.conf_**
+
+**Change the content from**
+```
 <IfModule mod_dir.c>
     DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
 </IfModule>
-
-TO
-
+```
+**TO**
+```
 <IfModule mod_dir.c>
     DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 </IfModule>
-
+```
 ```
 sudo systemctl restart apache2 # Restart the Apache Server
 ```
