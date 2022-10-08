@@ -47,6 +47,42 @@ sudo systemctl restart apache2 # Restart the Apache Server
 ```
 sudo systemctl status apache2 # Check the Status
 ```
+# to be tested #
+```
+sudo mysql
+sudo mysql -u root -p
+CREATE USER 'pmauser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password_here';
+GRANT ALL PRIVILEGES ON *.* TO 'pmauser'@'localhost' WITH GRANT OPTION;
+exit
+```
+_You should now be able to access phpMyAdmin using this new user account "pmauser"._
+
+## Obscure phpMyAdmin URL ##
+_Security Reason we are going to change it from example.com/phpmyadmin to example.com/pmahidden_
+```
+sudo nano /etc/apache2/conf-available/phpmyadmin.conf
+```
+```
+# phpMyAdmin default Apache configuration
+
+Alias /pmahidden /usr/share/phpmyadmin
+```
+```
+sudo service apache2 reload
+```
+**_You should now be able to access phpMyAdmin at example.com/pmahidden_**
+
+## Protect with .htpasswd ##
+```
+#Now, we may be able to access phpMyAdmin at example.com/pmahidden
+#We can further protect the phpMyAdmin login page with .htpasswd. This adds another line of defence against bots and attackers.
+```
+## Allow .htaccess Overrides ##
+```
+#To set up .htpasswd, we must first change the phpMyadmin Apache configuration file to allow .htaccess Overrides.
+sudo nano /etc/apache2/conf-available/phpmyadmin.conf
+```
+
 
 ## Install PHP Modules to enhance the functionality of PHP ##
 ```
