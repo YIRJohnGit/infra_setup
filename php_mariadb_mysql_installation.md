@@ -51,8 +51,5 @@ sudo apt-get install -y php-cli # Install Pacakages
 ```
 
 ```
-sudo nano /var/www/html/info.php 
-```
-```
-sudo echo "<?php phpinfo(); ?>" > index.php
+sudo echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 ```
