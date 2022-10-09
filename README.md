@@ -1,5 +1,5 @@
 # Setting Up Infrastructure Ubuntu
-### Tsted in Linux Ubuntu ###
+### Tested in Linux Ubuntu ###
 
 ###### ***Setting Up Default Setting for New Machine***
 ```
