@@ -47,11 +47,13 @@ _**Note:** Please follow on screen instruction to complete the activity and rest
   ```
   i8042.nomux i8024.noloop"
   ```
+  Change this line <this is default>
   ![image](https://user-images.githubusercontent.com/111234771/194801063-99d1174a-185d-43ca-9c26-3c5c9b51dd18.png)
 
-![image](https://user-images.githubusercontent.com/111234771/194801256-5c82d91e-fbce-41e5-8d65-5a3a747f9b22.png)
+  Make the change in the specified Line
+  ![image](https://user-images.githubusercontent.com/111234771/194801256-5c82d91e-fbce-41e5-8d65-5a3a747f9b22.png)
 
-![image](https://user-images.githubusercontent.com/111234771/194801191-0a4d7317-ea9a-4fd3-82fd-b255e8bca28e.png)
+  ![image](https://user-images.githubusercontent.com/111234771/194801191-0a4d7317-ea9a-4fd3-82fd-b255e8bca28e.png)
 
   ```
   sudo update-grub
