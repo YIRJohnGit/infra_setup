@@ -112,7 +112,8 @@ cd /usr/local
 sudo tar -xzvf $HOME/Downloads/hadoop-3.3.3.tar.gz
 sudo chmod 777 hadoop-3.3.3
 ```
-***Setting Up Environment __~/.bashrc__ ***
+
+***Setting Up Environment _~/.bashrc_***
 ```
 sudo nano $HOME/.bashrc 
 ```
