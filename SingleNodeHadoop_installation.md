@@ -127,7 +127,7 @@ readlink -f $(which java) # Verify Java Location
 ```
 sudo nano $HOME/.bashrc 
 ```
-_Add the below contet to the file_
+_Add the below content to the file_
 ```
 # Set Hadoop-related environment variables
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
