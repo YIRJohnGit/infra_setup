@@ -7,7 +7,7 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y linux-headers-$(uname -r) build-essential dkms
 ```
-**_Note:** If you get any error, re run the the above command_
+_**Note:** If you get any error, re run the the above command_
 
 **_Result_**
 ![image](https://user-images.githubusercontent.com/111234771/194798887-06fa75b3-0a8a-47a0-a5bd-34614186941f.png)
