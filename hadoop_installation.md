@@ -254,6 +254,10 @@ readlink -f $(which java) # Verify Java Location
 ![image](https://user-images.githubusercontent.com/111234771/194431744-cc2226a3-f778-4741-aa35-af1aa9538197.png)
 
 ## Start the Hadoop and its Services ##
+**_Note: The below command will take time to initialize, please be patient_** 
+**_The Successfull Setup will show the below result_** 
+![image](https://user-images.githubusercontent.com/111234771/194432514-7413c5d9-8926-4b9c-8640-83af1a140da8.png)
+
 ```
 hadoop namenode -format
 ```
@@ -263,9 +267,7 @@ cd $HADOOP_HOME/sbin
 ./start-all.sh 
 jps 
 ```
-**_Note: The above command will take time to initialize, please be patient_** 
-**_The Successfull Setup will show the below result_** 
-![image](https://user-images.githubusercontent.com/111234771/194432514-7413c5d9-8926-4b9c-8640-83af1a140da8.png)
+
 
 ## Verify User GUI ##
 _Access Hadoop UI from Browser_
