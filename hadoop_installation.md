@@ -1,4 +1,6 @@
 # Single Node Hadoop Installation on Ubuntu 22 #
+
+### Initial Setup and System Updates ###
 ```
 sudo apt update
 sudo apt-get install -y apt-transport-https curl 
