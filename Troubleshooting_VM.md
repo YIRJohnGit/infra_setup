@@ -25,8 +25,8 @@ _If you are not able to see the Menu Option (Refer the above image) in the VB, P
 cd /media<user name>VBox_GAs_6.1.38/
 ./autorun.sh
 ```
-**_Note:** Please follow on screen instruction to complete the activity and restart the machine and enter the password when prompted_
-  ![image](https://user-images.githubusercontent.com/111234771/194799459-c2521a83-1fe5-479e-a40e-9e62c47c4f60.png)
+_**Note:** Please follow on screen instruction to complete the activity and restart the machine and enter the password when prompted_
+    ![image](https://user-images.githubusercontent.com/111234771/194799459-c2521a83-1fe5-479e-a40e-9e62c47c4f60.png)
 
   _Once Completed you will get the screen as shown below image_
 ![image](https://user-images.githubusercontent.com/111234771/194799459-c2521a83-1fe5-479e-a40e-9e62c47c4f60.png)
@@ -34,4 +34,7 @@ cd /media<user name>VBox_GAs_6.1.38/
   ## TS:02 - Mouse Pointer Issue / Copy Paste Issues ##
 
   #### Step 1 - Make Sure you have set the Mouse to Bidirectional ####
-  #### Step 2 - Make Sure you have set the Mouse to Bidirectional ####
+  ![image](https://user-images.githubusercontent.com/111234771/194800357-2f231130-ca9a-45da-92a6-d6eae379306c.png)
+  
+  #### Step 2 - Make Sure you have set the Pointing Device to <USB Multi-Touch Tablet> ####
+  ![image](https://user-images.githubusercontent.com/111234771/194800445-0f8443c8-c732-4ff1-a068-19350e2cd84a.png)
