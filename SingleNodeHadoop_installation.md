@@ -24,13 +24,13 @@ sudo apt install -y default-jdk
 #sudo apt install -y openjdk-8-jdk
 ```
 
-### Step-3 Setting Up Host Details ###
+### Step-3.1 Setting Up Host as 'localhost' in /etc/hostname file ###
 ```
-sudo hostnamectl set-hostname localhost
-exec bash
-hostname
+sudo nano /etc/hostname
 ```
 Change the **_localhost_**
+
+### Step-3.2 Setting Up Known Hosts as '127.0.0.1 localhost' in /etc/hosts file ###
 ```
 sudo nano /etc/hosts 
 ```
