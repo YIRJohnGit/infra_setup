@@ -190,7 +190,7 @@ sudo cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
 ssh localhost 
 ```
 
-***_Starting Hadoop_***
+***_Starting Hadoop in New Terminal_***
 ```
 cd $HADOOP_HOME
 cd sbin
