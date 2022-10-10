@@ -6,6 +6,7 @@ sudo apt-get install -y openssh-server
 sudo apt-get install -y ssh 
 ssh-keygen
 ```
+```
 sudo apt update
 java -version
 ```
