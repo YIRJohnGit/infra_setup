@@ -122,6 +122,7 @@ readlink -f $(which java) # Verify Java Location
 ```
 ![image](https://user-images.githubusercontent.com/111234771/194933267-60615dbb-0b6d-4a64-90ac-0f2c0003d41f.png)
 ***In My Case : ***_/usr/lib/jvm/java-11-openjdk-amd64/bin/java_
+
 ***Setting Up Environment _~/.bashrc_***
 ```
 sudo nano $HOME/.bashrc 
@@ -132,7 +133,7 @@ _Add the below contet to the file_
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
 
 # Set JAVA home directory
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 #Set aliases and functions for running Hadoop-related commands
 unalias fs &> /dev/null
