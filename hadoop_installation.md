@@ -23,9 +23,12 @@ sudo nano /etc/hostname
 ```
 Change the **_localhost_**
 ```
-sudo nano /etc/hosts # 127.0.0.1 localhost 
+sudo nano /etc/hosts 
 ```
-	
+127.0.0.1 localhost 
+
+![image](https://user-images.githubusercontent.com/111234771/194789510-9cee067a-2bc7-49f7-80c9-e495a9eb3ab3.png)
+
 ### ***User Creation from Hadoop User*** ###
 
 ```
