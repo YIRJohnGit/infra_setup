@@ -1,23 +1,12 @@
 # Single Node Hadoop Installation on Ubuntu 22 #
 ```
 sudo apt update
-```
-```
 sudo apt-get install -y apt-transport-https curl 
-```
-```
 sudo apt-get install -y openssh-server
-```
-```
 sudo apt-get install -y ssh 
-```
-```
 ssh-keygen
 ```
-```
 sudo apt update
-```
-```
 java -version
 ```
 ```
@@ -40,14 +29,8 @@ sudo nano /etc/hosts # 127.0.0.1 localhost
 
 ```
 sudo addgroup hadoop
-```
-```
 sudo adduser --ingroup hadoop hduser 
-```
-```
 sudo usermod -a -G sudo hduser 
-```
-```
 su hduser 
 ```
 ## Restart the system ###
@@ -58,14 +41,10 @@ sudo reboot
 ## Login to hduser ##
 ```
 sudo apt-get install -y ssh 
-```
-```
 ssh-keygen 
 ```
 ```
 sudo cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
-```
-```
 ssh localhost 
 ```
 
@@ -92,8 +71,6 @@ sudo update-alternatives --config javac
 #### or ####
 ```
 sudo update-java-alternatives -l # Get the list of Java
-```
-```
 sudo update-alternatives --config java
 ```
 
@@ -260,7 +237,18 @@ jps
 **_The Successfull Setup will show the below result_** 
 ![image](https://user-images.githubusercontent.com/111234771/194432514-7413c5d9-8926-4b9c-8640-83af1a140da8.png)
 
-## Check Hadoop GUI in browser ##
+## Verify User GUI ##
+Access Hadoop UI from Browser 
 ```
 localhost:9870 
+```
+
+Access individual DataNodes directly 
+```
+localhost:9864 
+```
+
+Access YARN Resource Manager directly 
+```
+localhost:8088
 ```
