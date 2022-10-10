@@ -16,11 +16,11 @@ java -version
 
 ### Step-2 Java Installation ###
 ```
-sudo apt install -y default-jre
-java -version
+#sudo apt install -y default-jre
+#java -version
 ```
 ```
-#sudo apt install -y default-jdk
+sudo apt install -y default-jdk
 #sudo apt install -y openjdk-8-jdk
 ```
 
