@@ -121,6 +121,7 @@ sudo chmod 777 hadoop-3.3.3
 readlink -f $(which java) # Verify Java Location
 ```
 ![image](https://user-images.githubusercontent.com/111234771/194933267-60615dbb-0b6d-4a64-90ac-0f2c0003d41f.png)
+***In My Case : ***_/usr/lib/jvm/java-11-openjdk-amd64/bin/java_
 ***Setting Up Environment _~/.bashrc_***
 ```
 sudo nano $HOME/.bashrc 
