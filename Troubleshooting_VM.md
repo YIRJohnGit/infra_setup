@@ -2,17 +2,17 @@
 
 ## TS:01 - Screen Resize Issue ##
 
-**Run the Following Command**
+**Step 1 - Run the Following Command**
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y linux-headers-$(uname -r) build-essential dkms
 ```
 _**Note:** If you get any error, re run the the above command_
 
-**_Result_**
+**_Result:- _**
 ![image](https://user-images.githubusercontent.com/111234771/194798887-06fa75b3-0a8a-47a0-a5bd-34614186941f.png)
 
-**Setting Up Additional cd Image**
+**Step 2 -Setting Up Additional cd Image**
 ![image](https://user-images.githubusercontent.com/111234771/194798972-1a90d727-485a-4771-b48c-e1d50c2512b1.png)
 
 _If you are not able to see the Menu Option (Refer the above image) in the VB, Please right side button <ctrl+f> ***(^f)*** and follow on screen instruction_
