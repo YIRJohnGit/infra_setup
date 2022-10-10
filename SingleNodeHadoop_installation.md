@@ -99,7 +99,7 @@ Nothing to configure.
 
 ***Download & Install Hadoop***
 ```
-cd Downloads
+cd ~/Downloads
 sudo wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz # Please download using URL to download complete file
 ```
 ***Incase of broken installaton please use the below***
