@@ -1,6 +1,6 @@
 # Single Node Hadoop Installation on Ubuntu 22 #
 
-### Initial Setup and System Updates ###
+### Step-1 Initial Setup and System Updates ###
 ```
 sudo apt update
 sudo apt-get install -y apt-transport-https curl 
@@ -12,6 +12,8 @@ ssh-keygen
 sudo apt update
 java -version
 ```
+
+### Step-2 Java Installation ###
 ```
 sudo apt install -y default-jre
 java -version
@@ -20,6 +22,8 @@ java -version
 #sudo apt install -y default-jdk
 sudo apt install -y openjdk-8-jdk
 ```
+
+### Step-3 Setting Up Host Details ###
 ```
 sudo nano /etc/hostname
 ```
@@ -31,7 +35,8 @@ sudo nano /etc/hosts
 
 ![image](https://user-images.githubusercontent.com/111234771/194789510-9cee067a-2bc7-49f7-80c9-e495a9eb3ab3.png)
 
-### ***User Creation from Hadoop User*** ###
+
+### Step-4 User Creation (Optional) ###
 
 ```
 sudo addgroup hadoop
@@ -39,12 +44,12 @@ sudo adduser --ingroup hadoop hduser
 sudo usermod -a -G sudo hduser 
 su hduser 
 ```
-## Restart the system ###
+***Restart the system***
 ```
 sudo reboot
 ```
 
-## Login to hduser ##
+***Login to hduser***
 ```
 sudo apt-get install -y ssh 
 ssh-keygen 
@@ -54,17 +59,18 @@ sudo cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
 ssh localhost 
 ```
 
-## Edit the file and disable IPV6 ##
+### Step-5 Disable IPV6 ###
 ```
 sudo nano /etc/sysctl.conf
 ```
+***Update the below content in the config file***
 ```
 net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
 net.ipv6.conf.lo.disable_ipv6 = 1
 ```
 
-## Reboot the machine to make the changes and logon to hduser ##
+***Restart the system***
 ```
 sudo reboot
 ```
@@ -80,18 +86,24 @@ sudo update-java-alternatives -l # Get the list of Java
 sudo update-alternatives --config java
 ```
 
-## IF NOT FOUND JAVAC ##
+### Step-6 Installation of Hadoop ###
+***IF NOT FOUND JAVAC***
 ```
 sudo apt install -y openjdk-8-jdk
 ```
 There is only one alternative in link group javac (providing /usr/bin/javac): /usr/lib/jvm/java-11-openjdk-amd64/bin/javac
 Nothing to configure.
 
-## Download & Install Hadoop ##
+***Download & Install Hadoop***
 ```
 cd Downloads
 sudo wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz # Please download using URL to download complete file
 ```
+***Incase of broken installaton please use the below***
+```
+sudo wget --continue https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz # Please continue download using URL to download complete file
+```
+
 ***Make sure you have 100% Download Complete***
 ![image](https://user-images.githubusercontent.com/111234771/194428956-0a9ea0df-6954-487a-b478-ec7d36c8defc.png)
 
@@ -100,10 +112,11 @@ cd /usr/local
 sudo tar -xzvf $HOME/Downloads/hadoop-3.3.3.tar.gz
 sudo chmod 777 hadoop-3.3.3
 ```
-
+***Setting Up Environment __~/.bashrc__ ***
 ```
 sudo nano $HOME/.bashrc 
 ```
+_Add the below contet to the file_
 ```
 # Set Hadoop-related environment variables
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
@@ -121,9 +134,11 @@ alias hls="fs-ls"
 export PATH=$PATH:$HADOOP_HOME/bin
 ```
 
+***Setting Up Environment __/etc/profile__ ***
 ```
 sudo nano /etc/profile
 ```
+_Add the below contet to the file_
 ```
 # Insert JAVA_HOME
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -138,7 +153,7 @@ PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin
 export PATH JAVA_HOME HADOOP_HOME
 ```
 
-## Setting up Virtual Env ##
+***Setting Up Environment _$HADOOP_HOME/etc/hadoop/hadoop-env.sh_ ***
 ```
 sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 ```
@@ -148,22 +163,23 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
 ```
 
+_Resetting the Environment_
 ```
 source $HOME/.bashrc 
 source /etc/profile 
-```
-```
 cd $HADOOP_HOME
 cd etc/hadoop 
 ```
 ```
 $ pwd
 ```
-### /usr/local/hadoop-3.3.3/etc/hadoop ###
+_/usr/local/hadoop-3.3.3/etc/hadoop_
 
+***Setting Up Environment _hadoop-env.sh_ ***
 ```
 sudo nano hadoop-env.sh
 ```
+_Add the below contet to the file_
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
@@ -173,9 +189,11 @@ export HADOOP_HOME=/usr/local/hadoop-3.3.3
 sudo mkdir -p /app/hadoop/tmp 
 sudo chown hduser:hadoop /app/hadoop/tmp  
 ```
+***Setting Up Environment _core-site.xml_ ***
 ```
 sudo nano core-site.xml
 ```
+_Add the below contet to the file_
 ```
 <configuration>
 	<property> 
@@ -188,9 +206,11 @@ sudo nano core-site.xml
 	</property>  
 </configuration>
 ```
+***Setting Up Environment _mapred-site.xml_ ***
 ```
 sudo nano mapred-site.xml
 ```
+_Add the below contet to the file_
 ```
 <configuration>
 	<property> 
@@ -199,10 +219,11 @@ sudo nano mapred-site.xml
 	</property> 
 </configuration>
 ```
-
+***Setting Up Environment _hdfs-site.xml _ ***
 ```
 sudo nano hdfs-site.xml 
 ```
+_Add the below contet to the file_
 ```
 <configuration>
 	<property> 
@@ -211,10 +232,11 @@ sudo nano hdfs-site.xml
 	</property>  
 </configuration>
 ```
-
+***Setting Up Environment _yarn-site.xml_ ***
 ```
 sudo nano yarn-site.xml 
 ```
+_Add the below contet to the file_
 ```
 <configuration>
 	<property> 
@@ -244,17 +266,17 @@ jps
 ![image](https://user-images.githubusercontent.com/111234771/194432514-7413c5d9-8926-4b9c-8640-83af1a140da8.png)
 
 ## Verify User GUI ##
-Access Hadoop UI from Browser 
+_Access Hadoop UI from Browser _
 ```
 localhost:9870 
 ```
 
-Access individual DataNodes directly 
+_Access individual DataNodes directly _
 ```
 localhost:9864 
 ```
 
-Access YARN Resource Manager directly 
+_Access YARN Resource Manager directly _
 ```
 localhost:8088
 ```
