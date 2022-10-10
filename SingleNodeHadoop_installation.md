@@ -152,7 +152,7 @@ sudo nano /etc/profile
 _Add the below contet to the file_
 ```
 # Insert JAVA_HOME
-JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 # Insert  HADOOP_HOME
 HADOOP_HOME=/usr/local/hadoop-3.3.3
