@@ -183,6 +183,21 @@ export HADOOP_HOME=/usr/local/hadoop-3.3.3
 ```
 ![image](https://user-images.githubusercontent.com/111234771/194935754-18aab709-81b3-490e-8693-4c7c23af8058.png)
 
+
+***_Verify your localhost is accessible via ssh_***
+```
+sudo cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+ssh localhost 
+```
+
+***_Starting Hadoop_***
+```
+cd $HADOOP_HOME
+cd sbin
+./start-all.sh 
+jps
+```
+
 ***Creating Temp Folder***
 ```
 sudo mkdir -p /app/hadoop/tmp 
