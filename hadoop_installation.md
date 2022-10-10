@@ -135,7 +135,7 @@ alias hls="fs-ls"
 export PATH=$PATH:$HADOOP_HOME/bin
 ```
 
-***Setting Up Environment __/etc/profile__ ***
+***Setting Up Environment _/etc/profile_***
 ```
 sudo nano /etc/profile
 ```
@@ -154,7 +154,7 @@ PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin
 export PATH JAVA_HOME HADOOP_HOME
 ```
 
-***Setting Up Environment _$HADOOP_HOME/etc/hadoop/hadoop-env.sh_ ***
+***Setting Up Environment _$HADOOP_HOME/etc/hadoop/hadoop-env.sh_***
 ```
 sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 ```
@@ -176,7 +176,7 @@ $ pwd
 ```
 _/usr/local/hadoop-3.3.3/etc/hadoop_
 
-***Setting Up Environment _hadoop-env.sh_ ***
+***Setting Up Environment _hadoop-env.sh_***
 ```
 sudo nano hadoop-env.sh
 ```
@@ -190,7 +190,7 @@ export HADOOP_HOME=/usr/local/hadoop-3.3.3
 sudo mkdir -p /app/hadoop/tmp 
 sudo chown hduser:hadoop /app/hadoop/tmp  
 ```
-***Setting Up Environment _core-site.xml_ ***
+***Setting Up Environment _core-site.xml_***
 ```
 sudo nano core-site.xml
 ```
@@ -207,7 +207,7 @@ _Add the below contet to the file_
 	</property>  
 </configuration>
 ```
-***Setting Up Environment _mapred-site.xml_ ***
+***Setting Up Environment _mapred-site.xml_***
 ```
 sudo nano mapred-site.xml
 ```
@@ -220,7 +220,7 @@ _Add the below contet to the file_
 	</property> 
 </configuration>
 ```
-***Setting Up Environment _hdfs-site.xml _ ***
+***Setting Up Environment _hdfs-site.xml _***
 ```
 sudo nano hdfs-site.xml 
 ```
@@ -233,7 +233,7 @@ _Add the below contet to the file_
 	</property>  
 </configuration>
 ```
-***Setting Up Environment _yarn-site.xml_ ***
+***Setting Up Environment _yarn-site.xml_***
 ```
 sudo nano yarn-site.xml 
 ```
