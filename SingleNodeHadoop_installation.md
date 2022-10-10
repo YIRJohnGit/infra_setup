@@ -164,6 +164,14 @@ PATH=$PATH:$JAVA_HOME/bin:$HADOOP_HOME/bin
 export PATH JAVA_HOME HADOOP_HOME
 ```
 
+***_Resetting the Environment_***
+```
+source $HOME/.bashrc 
+source /etc/profile 
+cd $HADOOP_HOME
+cd etc/hadoop 
+```
+
 ***Setting Up Environment _$HADOOP_HOME/etc/hadoop/hadoop-env.sh_***
 ```
 sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
@@ -172,14 +180,6 @@ _Add the below contet to the file_
 ```
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
-```
-
-_Resetting the Environment_
-```
-source $HOME/.bashrc 
-source /etc/profile 
-cd $HADOOP_HOME
-cd etc/hadoop 
 ```
 ```
 $ pwd
