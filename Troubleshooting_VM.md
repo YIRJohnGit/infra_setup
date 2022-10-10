@@ -38,3 +38,23 @@ _**Note:** Please follow on screen instruction to complete the activity and rest
   
   #### Step 2 - Make Sure you have set the Pointing Device to <USB Multi-Touch Tablet> ####
   ![image](https://user-images.githubusercontent.com/111234771/194800445-0f8443c8-c732-4ff1-a068-19350e2cd84a.png)
+  
+  #### Step 3 - Changes in the grub File ####
+  ```
+  sudo nano /etc/default/grub
+  ```
+  _add the below to the line in the file and save (Refer Below Image)_
+  ```
+  i8042.nomux i8024.noloop"
+  ```
+  ![image](https://user-images.githubusercontent.com/111234771/194801063-99d1174a-185d-43ca-9c26-3c5c9b51dd18.png)
+
+![image](https://user-images.githubusercontent.com/111234771/194801256-5c82d91e-fbce-41e5-8d65-5a3a747f9b22.png)
+
+![image](https://user-images.githubusercontent.com/111234771/194801191-0a4d7317-ea9a-4fd3-82fd-b255e8bca28e.png)
+
+  ```
+  sudo update-grub
+  sudo shutdown now	
+
+  ```
