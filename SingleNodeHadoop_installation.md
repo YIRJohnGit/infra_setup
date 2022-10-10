@@ -116,7 +116,7 @@ sudo tar xzvf ~/Downloads/hadoop-3.3.3.tar.gz
 sudo chmod 777 hadoop-3.3.3
 ```
 
-***-Get the Java Enveronment Path-***
+***_Get the Java Enveronment Path_***
 ```
 readlink -f $(which java) # Verify Java Location
 ```
