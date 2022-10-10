@@ -29,7 +29,7 @@ _**Note:** Please follow on screen instruction to complete the activity and rest
     ![image](https://user-images.githubusercontent.com/111234771/194799459-c2521a83-1fe5-479e-a40e-9e62c47c4f60.png)
 
   _Once Completed you will get the screen as shown below image_
-![image](https://user-images.githubusercontent.com/111234771/194799459-c2521a83-1fe5-479e-a40e-9e62c47c4f60.png)
+  ![image](https://user-images.githubusercontent.com/111234771/194807750-7421ab4e-b902-45c9-8191-37e288117711.png)
 
   ## TS:02 - Mouse Pointer Issue / Copy Paste Issues ##
 
