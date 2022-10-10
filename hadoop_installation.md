@@ -1,5 +1,6 @@
 # Single Node Hadoop Installation on Ubuntu 22 #
 
+## Prerequitist and Installation ##
 ### Step-1 Initial Setup and System Updates ###
 ```
 sudo apt update
