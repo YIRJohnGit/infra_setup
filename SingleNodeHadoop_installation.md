@@ -181,21 +181,9 @@ _Add the below contet to the file_
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
 ```
-```
-$ pwd
-```
-_/usr/local/hadoop-3.3.3/etc/hadoop_
+![image](https://user-images.githubusercontent.com/111234771/194935754-18aab709-81b3-490e-8693-4c7c23af8058.png)
 
-***Setting Up Environment _hadoop-env.sh_***
-```
-sudo nano hadoop-env.sh
-```
-_Add the below contet to the file_
-```
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export HADOOP_HOME=/usr/local/hadoop-3.3.3
-```
-
+***Creating Temp Folder***
 ```
 sudo mkdir -p /app/hadoop/tmp 
 sudo chown hduser:hadoop /app/hadoop/tmp  
