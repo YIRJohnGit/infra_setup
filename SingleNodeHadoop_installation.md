@@ -26,7 +26,9 @@ sudo apt install -y default-jdk
 
 ### Step-3 Setting Up Host Details ###
 ```
-sudo nano /etc/hostname
+sudo hostnamectl set-hostname localhost
+exec bash
+hostname
 ```
 Change the **_localhost_**
 ```
