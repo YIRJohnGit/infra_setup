@@ -149,7 +149,7 @@ export PATH=$PATH:$HADOOP_HOME/bin
 ```
 sudo nano /etc/profile
 ```
-_Add the below contet to the file_
+_Add the below content to the file_
 ```
 # Insert JAVA_HOME
 JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
@@ -176,7 +176,7 @@ cd etc/hadoop
 ```
 sudo nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 ```
-_Add the below contet to the file_
+_Add the below content to the file_
 ```
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
@@ -192,7 +192,7 @@ sudo chown hduser:hadoop /app/hadoop/tmp
 ```
 sudo nano core-site.xml
 ```
-_Add the below contet to the file_
+_Add the below content to the file_
 ```
 <configuration>
 	<property> 
@@ -209,7 +209,7 @@ _Add the below contet to the file_
 ```
 sudo nano mapred-site.xml
 ```
-_Add the below contet to the file_
+_Add the below content to the file_
 ```
 <configuration>
 	<property> 
@@ -222,7 +222,7 @@ _Add the below contet to the file_
 ```
 sudo nano hdfs-site.xml 
 ```
-_Add the below contet to the file_
+_Add the below content to the file_
 ```
 <configuration>
 	<property> 
@@ -235,7 +235,7 @@ _Add the below contet to the file_
 ```
 sudo nano yarn-site.xml 
 ```
-_Add the below contet to the file_
+_Add the below content to the file_
 ```
 <configuration>
 	<property> 
