@@ -112,7 +112,7 @@ sudo wget --continue https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-
 
 ```
 cd /usr/local 
-sudo tar -xzvf $HOME/Downloads/hadoop-3.3.3.tar.gz
+sudo tar xzvf ~/Downloads/hadoop-3.3.3.tar.gz
 sudo chmod 777 hadoop-3.3.3
 ```
 
