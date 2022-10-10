@@ -253,6 +253,7 @@ readlink -f $(which java) # Verify Java Location
 ```
 ![image](https://user-images.githubusercontent.com/111234771/194431744-cc2226a3-f778-4741-aa35-af1aa9538197.png)
 
+## Start the Hadoop and its Services ##
 ```
 hadoop namenode -format
 ```
@@ -267,17 +268,17 @@ jps
 ![image](https://user-images.githubusercontent.com/111234771/194432514-7413c5d9-8926-4b9c-8640-83af1a140da8.png)
 
 ## Verify User GUI ##
-_Access Hadoop UI from Browser _
+_Access Hadoop UI from Browser_
 ```
 localhost:9870 
 ```
 
-_Access individual DataNodes directly _
+_Access individual DataNodes directly_
 ```
 localhost:9864 
 ```
 
-_Access YARN Resource Manager directly _
+_Access YARN Resource Manager directly_
 ```
 localhost:8088
 ```
