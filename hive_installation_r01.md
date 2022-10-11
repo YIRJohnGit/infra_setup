@@ -80,7 +80,8 @@ sudo nano hive-site.xml
 
 **Note:** _Apache Hive uses the Derby database to store metadata. Initiate the Derby database, from the Hive bin directory using the **schematool** command_
 ```
-schematool -dbType derby -initSchema
+#schematool -dbType derby -initSchema
+schematool -initSchema -dbType derby
 ```
 
 ## Verify Using Shell ##
