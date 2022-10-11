@@ -24,7 +24,7 @@ sudo wget --continue https://dlcdn.apache.org/hive/stable-2/apache-hive-2.3.9-bi
 ```
 ```
 sudo tar -xvzf apache-hive-2.3.9-bin.tar.gz
-sudo chmod 777 apache-hive-2.3.9-bin/
+sudo chmod 777 apache-hive-2.3.9-bin
 sudo mv apache-hive-2.3.9-bin /usr/local/
 ```
 
