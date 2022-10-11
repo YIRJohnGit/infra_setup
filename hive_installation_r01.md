@@ -79,3 +79,12 @@ schematool -dbType derby -initSchema
 cd $HIVE_HOME/bin
 hive
 ```
+
+# Troubleshooting #
+### TS-001 - SLF4J: Class path contains multiple SLF4J bindings ###
+
+![image](https://user-images.githubusercontent.com/111234771/194996405-3d66d8ab-e181-4521-8642-76c6b638cb54.png)
+
+
+**Problem Statement:** _Same kind of Class Function are available in Two difference places with difference versions_
+**Solution:** _We are going delete one file from New locaition and copy ands replace the other file from old location to new location, that means we will have same file in both places_
