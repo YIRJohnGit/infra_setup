@@ -70,9 +70,10 @@ cd $HIVE_HOME/conf
 sudo cp hive-default.xml.template hive-site.xml
 sudo nano hive-site.xml
 ```
-**_Add the below Change to the File and Save_**
+**_Add the below Change to the hive-site.xml File and Save_**
 ```
-# check hive directory path
+# change metastore location to above created hdfs path(/user/hive/warehouse)
+
 ```
 
 ### Step-7 - Initiate Derby Database ###
