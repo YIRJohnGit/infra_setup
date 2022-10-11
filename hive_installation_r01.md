@@ -32,7 +32,7 @@ sudo mv apache-hive-2.3.9-bin /usr/local/
 ```
 sudo nano ~/.bashrc
 ```
-**_Add the below Change to the File and Save_**
+**_Add the below Change to the ~/.bashrc File and Save_**
 ```
 export HIVE_HOME=/usr/local/apache-hive-2.3.9-bin
 export PATH=$PATH:$HIVE_HOME/bin
@@ -40,6 +40,14 @@ export PATH=$PATH:$HIVE_HOME/bin
 **_Initiate the default changes_**
 ```
 source ~/.bashrc
+```
+
+**_Add the below Change to the hive-config.sh File and Save_**
+```
+sudo nano $HIVE_HOME/bin/hive-config.sh
+```
+```
+export HADOOP_HOME=/usr/local/hadoop-3.3.3
 ```
 
 ### Step-5 - Create Hive Directories in DFS ###
