@@ -45,7 +45,21 @@ source ~/.bashrc
 sudo nano ~/.bashrc
 ```
 **_Add the below Change to the File and Save_**
+
 _Create two separate directories to store data in the HDFS layer_
 
 •	The temporary, tmp directory is going to store the intermediate results of Hive processes.
+
 •	The warehouse directory is going to store the Hive related tables.
+
+```
+hdfs dfs -mkdir /tmp
+hdfs dfs -chmod g+w /tmp
+hdfs dfs -mkdir -p /user/hive/warehouse
+hdfs dfs -chmod g+w /user/hive/warehouse
+```
+
+### Step-5 - Configure hive-site.xml File ###
+```
+sudo nano $HIVE_HOME/conf/hive-site.xml
+```
