@@ -204,7 +204,7 @@ sudo chown hduser:hadoop /app/hadoop/tmp
 ```
 ***Setting Up Environment _core-site.xml_***
 ```
-sudo nano core-site.xml
+sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
 ```
 _Add the below content to the file_
 ```
@@ -221,7 +221,7 @@ _Add the below content to the file_
 ```
 ***Setting Up Environment _mapred-site.xml_***
 ```
-sudo nano mapred-site.xml
+sudo nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 ```
 _Add the below content to the file_
 ```
@@ -234,7 +234,7 @@ _Add the below content to the file_
 ```
 ***Setting Up Environment _hdfs-site.xml _***
 ```
-sudo nano hdfs-site.xml 
+sudo nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml 
 ```
 _Add the below content to the file_
 ```
@@ -247,7 +247,7 @@ _Add the below content to the file_
 ```
 ***Setting Up Environment _yarn-site.xml_***
 ```
-sudo nano yarn-site.xml 
+sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml 
 ```
 _Add the below content to the file_
 ```
