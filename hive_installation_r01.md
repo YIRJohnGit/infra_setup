@@ -17,8 +17,8 @@ sudo apt install -y default-jdk
 ### Step-3 - Download hive from the below link ###
 ```
 cd ~/Downloads
-wget https://dlcdn.apache.org/hive/stable-2/apache-hive-2.3.9-bin.tar.gz # Download the hive file
-wget --continue https://dlcdn.apache.org/hive/stable-2/apache-hive-2.3.9-bin.tar.gz # Reconfirm or continue downloading or verify 100% downloads
+sudo wget https://dlcdn.apache.org/hive/stable-2/apache-hive-2.3.9-bin.tar.gz # Download the hive file
+sudo wget --continue https://dlcdn.apache.org/hive/stable-2/apache-hive-2.3.9-bin.tar.gz # Reconfirm or continue downloading or verify 100% downloads
 ```
 ```
 sudo tar -xvzf apache-hive-2.3.9-bin.tar.gz
