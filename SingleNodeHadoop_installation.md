@@ -285,6 +285,11 @@ jps
 ## Verify User GUI ##
 _Access Hadoop UI from Browser_
 ```
+localhost:50070
+```
+
+_Access Hadoop UI from Browser_
+```
 localhost:9870 
 ```
 
