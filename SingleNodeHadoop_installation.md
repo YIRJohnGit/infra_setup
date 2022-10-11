@@ -192,8 +192,7 @@ ssh localhost
 
 ***_Starting Hadoop in New Terminal_***
 ```
-cd $HADOOP_HOME
-cd sbin
+cd $HADOOP_HOME/sbin
 ./start-all.sh 
 jps
 ```
