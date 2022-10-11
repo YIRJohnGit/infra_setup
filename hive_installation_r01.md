@@ -68,7 +68,7 @@ hdfs dfs -chmod g+w /user/hive/warehouse
 ```
 cd $HIVE_HOME/conf
 sudo cp hive-default.xml.template hive-site.xml
-sudo nano hive-site.xml
+sudo nano $HIVE_HOME/conf/hive-site.xml
 ```
 **_Add the below Change to the hive-site.xml File and Save_**
 ```
