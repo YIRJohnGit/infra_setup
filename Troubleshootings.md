@@ -60,3 +60,19 @@ _**Note:** Please follow on screen instruction to complete the activity and rest
   sudo shutdown now	
 
   ```
+
+  # Troubleshooting on Hostname Issue #
+  
+  ```
+  hostnamectl
+  sudo sysctl kernel.hostname=localhost # Change the transient hostname
+  hostnamectl
+  ```
+  
+  **OR**
+```
+  hostnamectl
+  sudo hostnamectl set-hostname localhost
+  hostname
+  exec bash
+```
