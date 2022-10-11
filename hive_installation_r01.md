@@ -92,6 +92,8 @@ hive
 
 ```
 sudo mv /usr/local/apache-hive-2.3.9-bin/lib/log4j-slf4j-impl-2.6.2.jar /usr/local/apache-hive-2.3.9-bin/lib/log4j-slf4j-impl-2.6.2.jar.bak
+```
+```
 sudo cp /usr/local/hadoop-3.3.3/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar /usr/local/apache-hive-2.3.9-bin/lib/
 ```
 _Restart Hive Again_
