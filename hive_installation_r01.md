@@ -61,5 +61,24 @@ hdfs dfs -chmod g+w /user/hive/warehouse
 
 ### Step-5 - Configure hive-site.xml File ###
 ```
-sudo nano $HIVE_HOME/conf/hive-site.xml
+cd $HIVE_HOME/conf
+sudo cp hive-default.xml.template hive-site.xml
+sudo nano hive-site.xml
+```
+**_Add the below Change to the File and Save_**
+```
+# check hive directory path
+```
+
+### Step-6 - Initiate Derby Database ###
+
+**Note:** _Apache Hive uses the Derby database to store metadata. Initiate the Derby database, from the Hive bin directory using the **schematool** command_
+```
+schematool -dbType derby -initSchema
+```
+
+## Verify Using Shell ##
+```
+cd $HIVE_HOME/bin
+hive
 ```
