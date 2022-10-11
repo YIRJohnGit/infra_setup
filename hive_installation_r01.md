@@ -4,6 +4,8 @@
 ### Step-1 - Initial Setup and System Updates ###
 ```
 sudo apt update
+```
+```
 java -version
 readlink -f $(which java) # Verify Java Location
 ```
