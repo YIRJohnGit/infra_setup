@@ -42,16 +42,11 @@ export PATH=$PATH:$HIVE_HOME/bin
 source ~/.bashrc
 ```
 
-### Step-4 - Create Hive Directories in DFS ###
-```
-sudo nano ~/.bashrc
-```
-**_Add the below Change to the File and Save_**
+### Step-5 - Create Hive Directories in DFS ###
 
-_Create two separate directories to store data in the HDFS layer_
+**_Create two separate directories to store data in the HDFS layer_**
 
 •	The temporary, tmp directory is going to store the intermediate results of Hive processes.
-
 •	The warehouse directory is going to store the Hive related tables.
 
 ```
