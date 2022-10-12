@@ -19,9 +19,17 @@ sudo apt install -y default-jdk
 ### Step-3 - Download hive from the below link ###
 ```
 cd ~/Downloads
-sudo wget https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz # Download the hive file
+```
+
+**_Run the command for the first time and complete 100% Downloads_**
+```
+sudo wget https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz 
+```
+**_Incase of Error while downloading and you wanted to continue from where download is left, run the bewlow command_**
+```
 sudo wget --continue https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz # Reconfirm or continue downloading or verify 100% downloads
 ```
+**_Extract and Move the usr folder_**
 ```
 sudo tar -xzf apache-hive-3.1.3-bin.tar.gz
 sudo chmod 777 apache-hive-3.1.3-bin
