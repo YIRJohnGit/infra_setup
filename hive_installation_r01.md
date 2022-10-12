@@ -73,7 +73,7 @@ export HIVE_HOME=/home/hadoop/apache-hive-3.1.2-bin
 export PATH=$PATH:$HIVE_HOME/bin
 ```
 _Result_
-![image](https://user-images.githubusercontent.com/111234771/195232613-d3769b55-a34d-4bdd-a2d1-08180efc40a2.png)
+![image](https://user-images.githubusercontent.com/111234771/195293803-67a0d2b4-8fb5-4ac8-bc8e-0bf352fa1d5a.png)
 
 **_Initiate the default changes_**
 ```
