@@ -140,6 +140,7 @@ export PATH=$PATH:$HIVE_HOME/bin
 ```
 
 ### Remove the Directories ###
+```
 hdfs dfs -rm -R /tmp
 hdfs dfs -rm -R /user/hive/warehouse
 ```
