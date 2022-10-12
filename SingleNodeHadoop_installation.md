@@ -16,12 +16,11 @@ java -version
 
 ### Step-2 Java Installation ###
 ```
-#sudo apt install -y default-jre
 #java -version
 ```
 ```
-sudo apt install -y default-jdk
-#sudo apt install -y openjdk-8-jdk
+sudo apt install -y openjdk-8-jdk openjdk-8-jre
+#sudo apt install -y default-jdk
 ```
 ### Step-3.1 Setting Up Host as 'localhost' in /etc/hostname file ###
 ```
