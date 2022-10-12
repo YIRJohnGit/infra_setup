@@ -47,12 +47,12 @@ wget --continue https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-b
 **_Extract and Move the usr folder_**
 ```
 tar -xzf apache-hive-3.1.2-bin.tar.gz
-mv apache-hive-3.1.2-bin ../
-
-#chmod 777 apache-hive-3.1.3-bin
-#ls -lhsrt
 ```
 ![image](https://user-images.githubusercontent.com/111234771/195231142-53c8afce-e9d2-4715-a4ac-ed9e05332b2f.png) 
+
+```
+mv apache-hive-3.1.2-bin ../
+```
 
 ```
 #sudo mv apache-hive-3.1.3-bin /usr/local/
