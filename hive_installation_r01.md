@@ -165,6 +165,13 @@ bin/beeline -n hadoop -u jdbc:hive2://localhost:10000
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195278928-709db835-214f-4def-88ef-41a44201f4b3.png)
 
+```
+show databases;
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195280370-b049018f-1957-4b36-8850-b15ca3b53b20.png)
+
+# Congratulation..... Hive Sucessfully Installed...#
 
 # Uninstall Hive #
 ```
