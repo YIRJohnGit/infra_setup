@@ -42,8 +42,10 @@ ls -lhsrt
 
 ```
 sudo mv apache-hive-3.1.3-bin /usr/local/
-sudo chown hadoop:root /usr/local/apache-hive-3.1.3
+sudo chown hadoop:root /usr/local/apache-hive-3.1.3-bin
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195231783-5f5cb19b-068d-4c85-9295-f93dedd8246b.png)
 
 ### Step-4 - Add Environment Variables ###
 ```
