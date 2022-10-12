@@ -21,11 +21,11 @@ sudo apt install -y default-jdk
 cd ~/Downloads
 ```
 
-_**Note: **Run the command for the first time and complete 100% Downloads_
+_**Note:** Run the command for the first time and complete 100% Downloads_
 ```
 sudo wget https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz 
 ```
-_**Note: **Incase of Error while downloading and you wanted to continue from where download is left, run the bewlow command_
+_**Note:** Incase of Error while downloading and you wanted to continue from where download is left, run the bewlow command_
 ```
 sudo wget --continue https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz # Reconfirm or continue downloading or verify 100% downloads
 ```
