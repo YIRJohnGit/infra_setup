@@ -163,7 +163,7 @@ ls $HADOOP_HOME/share/hadoop/hdfs/lib/guava*
 _Result_
  ![image](https://user-images.githubusercontent.com/111234771/195242097-0af7ded1-bec2-47e3-b94b-6366061585c7.png) 
 
-### Remove and REplace the file ###
+### Remove and Replace the file ###
 ```
 sudo rm -f $HIVE_HOME/lib/guava-27.0-jre.jar
 ```
