@@ -114,7 +114,9 @@ sudo wget --continue https://dlcdn.apache.org/hadoop/common/hadoop-3.3.3/hadoop-
 cd /usr/local 
 sudo tar xzvf ~/Downloads/hadoop-3.3.3.tar.gz
 sudo chmod 777 hadoop-3.3.3
+
 ```
+![image](https://user-images.githubusercontent.com/111234771/195229328-a9a35b25-c322-4982-8b92-bbfd4202502d.png)
 
 ***_Get the Java Enveronment Path_***
 ```
