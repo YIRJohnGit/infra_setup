@@ -51,6 +51,7 @@ tar -xzf apache-hive-3.1.2-bin.tar.gz
 ![image](https://user-images.githubusercontent.com/111234771/195287831-79824bcc-748e-4cb5-a671-9e66eecf6d7b.png)
 
 ```
+ls -lhsrt
 mv apache-hive-3.1.2-bin ../
 ```
 
