@@ -23,7 +23,6 @@ java -version
 sudo apt install -y default-jdk
 #sudo apt install -y openjdk-8-jdk
 ```
-
 ### Step-3.1 Setting Up Host as 'localhost' in /etc/hostname file ###
 ```
 sudo nano /etc/hostname
@@ -117,7 +116,7 @@ sudo chmod 777 hadoop-3.3.3
 
 ```
 
-_Allow Acces to the Temp Folder_
+_Allow Access to the Temp Folder_
 ```
 sudo chown hadoop:root app/hadoop/tmp
 ```
