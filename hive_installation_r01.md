@@ -107,10 +107,10 @@ _Result_
 ```
 sudo nano $HIVE_HOME/conf/hive-site.xml
 ```
-```
-# change metastore location to above created hdfs path(/user/hive/warehouse)
+_change metastore location to above created hdfs path(/user/hive/warehouse_
 
-```
+![image](https://user-images.githubusercontent.com/111234771/195237700-fc8117f0-ccf1-44f9-8191-a8352c5fe144.png)
+
 
 ### Step-7 - Initiate Derby Database ###
 
