@@ -77,7 +77,7 @@ _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195233077-3a18aa31-3982-4a7c-ac59-130582aafe38.png)
 
 ### Step-5 - Create Hive Directories in DFS ###
-### Note: ### _Make SUre your Hadoop is running sucessfully_
+### Note:### _Make SUre your Hadoop is running sucessfully_
 **_Create two separate directories to store data in the HDFS layer_**
 
 •	The temporary, tmp directory is going to store the intermediate results of Hive processes.
