@@ -102,7 +102,7 @@ sudo cp hive-default.xml.template hive-site.xml
 ```
 _Result_
  ![image](https://user-images.githubusercontent.com/111234771/195235820-80e33ba2-a105-420a-8e50-e164d516b425.png) 
-```
+
 **_Add the below Change to the hive-site.xml File and Save_**
 ```
 sudo nano $HIVE_HOME/conf/hive-site.xml
