@@ -8,6 +8,9 @@ sudo apt update
 ```
 java -version
 readlink -f $(which java) # Verify Java Location
+
+sudo apt remove openjdk-11*
+sudo apt remove icedtea*
 ```
 
 ### Step-2 - Java Installation ###
@@ -22,7 +25,7 @@ cd ~/Downloads
 
 _**Note:** Run the command for the first time and complete 100% Downloads_
 ```
-sudo wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz 
+wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz 
 
 ```
 _Result: Successfull Downloads_
@@ -30,19 +33,21 @@ _Result: Successfull Downloads_
 
 _**Note:** Incase of Error while downloading and you wanted to continue from where download is left, run the bewlow command_
 ```
-sudo wget --continue https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz # Reconfirm or continue downloading or verify 100% downloads
+wget --continue https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz # Reconfirm or continue downloading or verify 100% downloads
 ```
 **_Extract and Move the usr folder_**
 ```
-sudo tar -xzf apache-hive-3.1.3-bin.tar.gz
-sudo chmod 777 apache-hive-3.1.3-bin
-ls -lhsrt
+tar -xzf apache-hive-3.1.2-bin.tar.gz
+mv apache-hive-3.1.2-bin ../
+
+#chmod 777 apache-hive-3.1.3-bin
+#ls -lhsrt
 ```
 ![image](https://user-images.githubusercontent.com/111234771/195231142-53c8afce-e9d2-4715-a4ac-ed9e05332b2f.png) 
 
 ```
-sudo mv apache-hive-3.1.3-bin /usr/local/
-sudo chown hadoop:root /usr/local/apache-hive-3.1.3-bin
+#sudo mv apache-hive-3.1.3-bin /usr/local/
+#sudo chown hadoop:root /usr/local/apache-hive-3.1.3-bin
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195231783-5f5cb19b-068d-4c85-9295-f93dedd8246b.png)
@@ -54,7 +59,7 @@ sudo nano ~/.bashrc
 **_Add the below Change to the ~/.bashrc File and Save_**
 ```
 #Hive Folder Path Settings
-export HIVE_HOME=/usr/local/apache-hive-3.1.3-bin
+export HIVE_HOME=/home/hadoop/apache-hive-3.1.2-bin
 export PATH=$PATH:$HIVE_HOME/bin
 ```
 _Result_
@@ -63,6 +68,30 @@ _Result_
 **_Initiate the default changes_**
 ```
 source ~/.bashrc
+```
+
+**_Add the below Change to the HADOOP Code file core-site.xml File and Save_**
+```
+sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
+```
+```
+        <!--for Setting Up Hive -->
+        <property>
+                <name>hadoop.proxyuser.hadoop.groups</name>
+                <value>*</value>
+        </property>
+        <property>
+                <name>hadoop.proxyuser.hadoop.hosts</name>
+                <value>*</value>
+        </property>
+        <property>
+                <name>hadoop.proxyuser.server.hosts</name>
+                <value>*</value>
+        </property>
+        <property>
+                <name>hadoop.proxyuser.server.groups</name>
+                <value>*</value>
+        </property>
 ```
 
 **_Add the below Change to the hive-config.sh File and Save_**
@@ -118,12 +147,24 @@ _change metastore location to above created hdfs path(/user/hive/warehouse_
 ```
 $HIVE_HOME/bin/schematool -initSchema -dbType derby
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195275213-f45c38af-06d0-44a4-957f-dfba043670aa.png)
 
 ## Verify Using Shell ##
 ```
-cd $HIVE_HOME/bin
-hive
+$HIVE_HOME/bin/hiveserver2
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195275570-06211297-210a-4665-8503-49a157c803ba.png)
+
+**Note:** _Start a New Terminal_
+```
+cd $HIVE_HOME
+bin/beeline -n hadoop -u jdbc:hive2://localhost:10000
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195278928-709db835-214f-4def-88ef-41a44201f4b3.png)
+
 
 # Uninstall Hive #
 ```
