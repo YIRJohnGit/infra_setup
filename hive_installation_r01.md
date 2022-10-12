@@ -73,6 +73,8 @@ sudo nano $HIVE_HOME/bin/hive-config.sh
 #Adding the Hadoop Home Path DIrectory to the Hive
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195233077-3a18aa31-3982-4a7c-ac59-130582aafe38.png)
 
 ### Step-5 - Create Hive Directories in DFS ###
 
