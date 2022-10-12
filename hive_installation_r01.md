@@ -67,6 +67,7 @@ source ~/.bashrc
 sudo nano $HIVE_HOME/bin/hive-config.sh
 ```
 ```
+#Adding the Hadoop Home Path DIrectory to the Hive
 export HADOOP_HOME=/usr/local/hadoop-3.3.3
 ```
 
