@@ -85,11 +85,11 @@ sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
 ```
         <!--for Setting Up Hive -->
         <property>
-                <name>hadoop.proxyuser.**_hadoop_**.groups</name>
+                <name>hadoop.proxyuser.hadoop.groups</name>
                 <value>*</value>
         </property>
         <property>
-                <name>hadoop.proxyuser.**_hadoop_**.hosts</name>
+                <name>hadoop.proxyuser.hadoop.hosts</name>
                 <value>*</value>
         </property>
         <property>
