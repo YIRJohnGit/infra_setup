@@ -36,7 +36,12 @@ sudo wget --continue https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-
 ```
 sudo tar -xzf apache-hive-3.1.3-bin.tar.gz
 sudo chmod 777 apache-hive-3.1.3-bin
-sudo mv apache-hive-3.1.3 /usr/local/
+ls -lhsrt
+```
+![image](https://user-images.githubusercontent.com/111234771/195230821-964700d1-b9b9-4449-a305-6a5f86815ba3.png)
+
+```
+sudo mv apache-hive-3.1.3-bin /usr/local/
 sudo chown hadoop:root /usr/local/apache-hive-3.1.3
 ```
 
