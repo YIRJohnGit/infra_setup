@@ -23,7 +23,7 @@ sudo wget https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz 
 sudo wget --continue https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz # Reconfirm or continue downloading or verify 100% downloads
 ```
 ```
-sudo tar -xvzf apache-hive-3.1.3-bin.tar.gz
+sudo tar -xzf apache-hive-3.1.3-bin.tar.gz
 sudo chmod 777 apache-hive-3.1.3-bin
 sudo mv apache-hive-3.1.3 /usr/local/
 ```
