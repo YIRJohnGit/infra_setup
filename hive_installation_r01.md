@@ -37,6 +37,7 @@ sudo wget --continue https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-
 sudo tar -xzf apache-hive-3.1.3-bin.tar.gz
 sudo chmod 777 apache-hive-3.1.3-bin
 sudo mv apache-hive-3.1.3 /usr/local/
+sudo chown hadoop:root /usr/local/apache-hive-3.1.3
 ```
 
 ### Step-4 - Add Environment Variables ###
