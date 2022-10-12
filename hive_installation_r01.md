@@ -57,6 +57,9 @@ sudo nano ~/.bashrc
 export HIVE_HOME=/usr/local/apache-hive-3.1.3-bin
 export PATH=$PATH:$HIVE_HOME/bin
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195232613-d3769b55-a34d-4bdd-a2d1-08180efc40a2.png)
+
 **_Initiate the default changes_**
 ```
 source ~/.bashrc
