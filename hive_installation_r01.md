@@ -1,6 +1,15 @@
 # Hive Installation on Hadoop [Ubuntu 22] #
 
 ## Prerequitist and Installation ##
+current Logged User Name: **_hadoop_**
+host: **_localhost_**
+```
+sudo hostnamectl set-hostname localhost
+exec bash
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195283872-ad5b1a98-5f9d-4356-934a-b6ec31935701.png)
+
 ### Step-1 - Initial Setup and System Updates ###
 ```
 sudo apt update
