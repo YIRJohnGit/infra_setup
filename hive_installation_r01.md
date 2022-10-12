@@ -38,7 +38,7 @@ sudo tar -xzf apache-hive-3.1.3-bin.tar.gz
 sudo chmod 777 apache-hive-3.1.3-bin
 ls -lhsrt
 ```
-![image](https://user-images.githubusercontent.com/111234771/195230821-964700d1-b9b9-4449-a305-6a5f86815ba3.png)
+![image](https://user-images.githubusercontent.com/111234771/195231142-53c8afce-e9d2-4715-a4ac-ed9e05332b2f.png) 
 
 ```
 sudo mv apache-hive-3.1.3-bin /usr/local/
