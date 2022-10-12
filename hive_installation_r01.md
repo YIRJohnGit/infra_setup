@@ -53,6 +53,7 @@ sudo nano ~/.bashrc
 ```
 **_Add the below Change to the ~/.bashrc File and Save_**
 ```
+#Hive Folder Path Settings
 export HIVE_HOME=/usr/local/apache-hive-3.1.3-bin
 export PATH=$PATH:$HIVE_HOME/bin
 ```
