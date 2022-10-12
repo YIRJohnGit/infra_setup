@@ -171,6 +171,15 @@ show databases;
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/195280370-b049018f-1957-4b36-8850-b15ca3b53b20.png)
 
+
+**Note:** _Start a New Terminal_
+```
+hive
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195281072-ab2eb396-e416-4340-a8aa-23900f950fcb.png)
+
+
 # Congratulation..... Hive Sucessfully Installed...#
 
 # Uninstall Hive #
