@@ -116,12 +116,6 @@ sudo chmod 777 hadoop-3.3.3
 
 ```
 
-_Allow Access to the Temp Folder_
-```
-sudo chown hadoop:root app/hadoop/tmp
-```
-![image](https://user-images.githubusercontent.com/111234771/195229328-a9a35b25-c322-4982-8b92-bbfd4202502d.png)
-
 ***_Get the Java Enveronment Path_***
 ```
 readlink -f $(which java) # Verify Java Location
@@ -206,8 +200,10 @@ jps
 ***Creating Temp Folder***
 ```
 sudo mkdir -p /app/hadoop/tmp 
-sudo chown hduser:hadoop /app/hadoop/tmp  
+sudo chown hadoop:root /app/hadoop/tmp  
 ```
+![image](https://user-images.githubusercontent.com/111234771/195229328-a9a35b25-c322-4982-8b92-bbfd4202502d.png)
+
 ***Setting Up Environment _core-site.xml_***
 ```
 sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
