@@ -48,7 +48,7 @@ wget --continue https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-b
 ```
 tar -xzf apache-hive-3.1.2-bin.tar.gz
 ```
-![image](https://user-images.githubusercontent.com/111234771/195231142-53c8afce-e9d2-4715-a4ac-ed9e05332b2f.png) 
+![image](https://user-images.githubusercontent.com/111234771/195287831-79824bcc-748e-4cb5-a671-9e66eecf6d7b.png)
 
 ```
 mv apache-hive-3.1.2-bin ../
