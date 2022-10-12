@@ -92,6 +92,8 @@ hdfs dfs -mkdir -p /user/hive/warehouse
 hdfs dfs -chmod g+w /user/hive/warehouse
 hdfs dfs -ls /
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/195234987-0c26e78e-c940-4220-bc34-dab53d019ef6.png)
 
 ### Step-6 - Configure hive-site.xml File ###
 ```
