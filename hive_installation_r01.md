@@ -149,22 +149,28 @@ hdfs dfs -rm -R /user/hive/warehouse
 # Troubleshooting #
 ### TS-001 - SLF4J: Class path contains multiple SLF4J bindings ###
 
-![image](https://user-images.githubusercontent.com/111234771/194996405-3d66d8ab-e181-4521-8642-76c6b638cb54.png)
-
+![image](https://user-images.githubusercontent.com/111234771/195240546-9ed7fc72-cd1e-47c6-9a64-8ec1c8deae46.png)
 
 **Problem Statement:** _Same kind of Class Function are available in Two difference places with difference versions_
 
 **Solution:** _We are going delete one file from New locaition and copy ands replace the other file from old location to new location, that means we will have same file in both places_
 
+### Locate the Files ###
 ```
-sudo mv /usr/local/apache-hive-3.1.3-bin/lib/log4j-slf4j-impl-2.6.2.jar /usr/local/apache-hive-3.1.3-bin/lib/log4j-slf4j-impl-2.6.2.jar.bak
+ls $HIVE_HOME/lib/guava*
+ls $HADOOP_HOME/share/hadoop/hdfs/lib/guava*
+```
+_Result_
+ ![image](https://user-images.githubusercontent.com/111234771/195242097-0af7ded1-bec2-47e3-b94b-6366061585c7.png) 
+
+### Remove and REplace the file ###
+```
+sudo rm -f $HIVE_HOME/lib/guava-27.0-jre.jar
 ```
 ```
-sudo cp /usr/local/hadoop-3.3.3/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar /usr/local/apache-hive-3.1.3-bin/lib/
+sudo cp $HADOOP_HOME/share/hadoop/hdfs/lib/guava-27.0-jre.jar $HIVE_HOME/lib/
 ```
-_Restart Hive Again_
-```
-cd $HIVE_HOME/bin
-schematool -dbType derby -initSchema
-hive
-```
+
+
+## Continue from Step-7 - Initiate Derby Database ##
+
