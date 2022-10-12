@@ -25,7 +25,7 @@ _**Note:** Run the command for the first time and complete 100% Downloads_
 ```
 sudo wget https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz 
 ```
-_Result: Successfull DOwnloads_
+_Result: Successfull Downloads_
 ![image](https://user-images.githubusercontent.com/111234771/195228590-1c012576-78e2-4645-bd55-0c16022b4a66.png)
 
 _**Note:** Incase of Error while downloading and you wanted to continue from where download is left, run the bewlow command_
