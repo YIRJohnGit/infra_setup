@@ -12,8 +12,7 @@ readlink -f $(which java) # Verify Java Location
 
 ### Step-2 - Java Installation ###
 ```
-sudo apt install -y default-jdk
-#sudo apt install -y openjdk-8-jdk
+sudo apt install -y openjdk-8-jdk openjdk-8-jre
 ```
 
 ### Step-3 - Download hive from the below link ###
