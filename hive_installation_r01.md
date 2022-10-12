@@ -71,17 +71,19 @@ source ~/.bashrc
 ```
 
 **_Add the below Change to the HADOOP Code file core-site.xml File and Save_**
+**_hadoop_ this as to be replaced with your user details**
+
 ```
 sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml
 ```
 ```
         <!--for Setting Up Hive -->
         <property>
-                <name>hadoop.proxyuser.hadoop.groups</name>
+                <name>hadoop.proxyuser.**_hadoop_**.groups</name>
                 <value>*</value>
         </property>
         <property>
-                <name>hadoop.proxyuser.hadoop.hosts</name>
+                <name>hadoop.proxyuser.**_hadoop_**.hosts</name>
                 <value>*</value>
         </property>
         <property>
