@@ -39,6 +39,7 @@ wget https://downloads.apache.org/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
 ```
 _Result: Successfull Downloads_
 ![image](https://user-images.githubusercontent.com/111234771/195228590-1c012576-78e2-4645-bd55-0c16022b4a66.png)
+![image](https://user-images.githubusercontent.com/111234771/195290913-ab0ea536-0459-4721-b040-adf13af19f9c.png)
 
 _**Note:** Incase of Error while downloading and you wanted to continue from where download is left, run the bewlow command_
 ```
