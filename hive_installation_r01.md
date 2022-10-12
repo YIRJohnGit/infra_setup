@@ -78,9 +78,10 @@ _Result_
 
 ### Step-5 - Create Hive Directories in DFS ###
 ***Note:*** _Make Sure your Hadoop is running sucessfully_
-**_Create two separate directories to store data in the HDFS layer_**
+**_to create two separate directories to store data in the HDFS layer_**
 
 •	The temporary, tmp directory is going to store the intermediate results of Hive processes.
+
 •	The warehouse directory is going to store the Hive related tables.
 
 ```
