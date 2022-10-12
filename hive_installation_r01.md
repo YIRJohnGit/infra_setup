@@ -97,14 +97,16 @@ sudo rm -R /usr/local/apache-hive-2.3.9-bin
 
 ### Remove the content from ~/.bashrc ###
 ```
+sudo nano ~/.bashrc
+```
+```
 export HIVE_HOME=/usr/local/apache-hive-2.3.9-bin
 export PATH=$PATH:$HIVE_HOME/bin
 ```
 
 ### Remove the Directories ###
-```
-hdfs dfs -rm /tmp
-hdfs dfs -rm -r /user/hive/warehouse
+hdfs dfs -rm -R /tmp
+hdfs dfs -rm -R /user/hive/warehouse
 ```
 
 
