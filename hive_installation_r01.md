@@ -90,6 +90,24 @@ cd $HIVE_HOME/bin
 hive
 ```
 
+# Uninstall Hive #
+```
+sudo rm -R /usr/local/apache-hive-2.3.9-bin
+```
+
+### Remove the content from ~/.bashrc ###
+```
+export HIVE_HOME=/usr/local/apache-hive-2.3.9-bin
+export PATH=$PATH:$HIVE_HOME/bin
+```
+
+### Remove the Directories ###
+```
+hdfs dfs -rm /tmp
+hdfs dfs -rm -r /user/hive/warehouse
+```
+
+
 # Troubleshooting #
 ### TS-001 - SLF4J: Class path contains multiple SLF4J bindings ###
 
