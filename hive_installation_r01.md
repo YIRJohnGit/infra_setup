@@ -116,8 +116,7 @@ _change metastore location to above created hdfs path(/user/hive/warehouse_
 
 **Note:** _Apache Hive uses the Derby database to store metadata. Initiate the Derby database, from the Hive bin directory using the **schematool** command_
 ```
-#schematool -dbType derby -initSchema
-schematool -initSchema -dbType derby
+$HIVE_HOME/bin/schematool -initSchema -dbType derby
 ```
 
 ## Verify Using Shell ##
