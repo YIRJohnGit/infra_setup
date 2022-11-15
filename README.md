@@ -26,7 +26,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/install_terraformv01.sh)"
 ```
 
-###### ***Adding Sudo User***
+# Adding Sudo User
 ```
 sudo adduser yirjohn
 ```
