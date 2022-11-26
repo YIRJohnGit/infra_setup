@@ -62,3 +62,9 @@ ssh-keygen
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/201989515-75087d2b-8658-4bab-a4ca-ffd4557b84d2.png)
+
+
+## Setting Kubernetes (k8s) Master Node and Worker Nodes 
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step1_k8s_all_nodes.sh)"
+```
