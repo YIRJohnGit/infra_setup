@@ -24,7 +24,7 @@ cat <<EOF | sudo tee /etc/docker/daemon.json
   "storage-driver": "overlay2"
 }
 EOF
-sudo usermod -aG docker ubuntu
+sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
