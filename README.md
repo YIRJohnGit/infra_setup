@@ -1,6 +1,11 @@
 # Setting Up Infrastructure Ubuntu
 ### Tested in Linux Ubuntu ###
 
+###### ***Setting Up Default Git and curl***
+```
+sudo apt install -y git curl
+```
+
 ###### ***Setting Up Default Setting for New Machine***
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/default_utility.sh)"
