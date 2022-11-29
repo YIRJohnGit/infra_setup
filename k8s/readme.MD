@@ -11,3 +11,9 @@
 # Backup Using Velero
 
 # Restore using Velero
+
+# Uninstall velero
+```
+kubectl delete namespace/velero clusterrolebinding/velero
+kubectl delete crds -l component=velero
+```
