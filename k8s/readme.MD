@@ -3,6 +3,11 @@ _Run the Script in all the nodes_
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step1_k8s_all_nodes.sh)"
 ```
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step2_k8s_master_nodes.sh)"
+```
+
 # Kubernetes Resetting
 
 # Kubernetes Testing
