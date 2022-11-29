@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd1
+  labels:
+    mycka: simplilearn
+spec:
+  containers:
+  - name: httpd1
+    image: docker.io/httpd
+    ports:
+    - containerPort: 80
