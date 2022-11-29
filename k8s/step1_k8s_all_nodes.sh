@@ -28,7 +28,11 @@ sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
+
+sudo systemctl daemon-reload
+
 sudo systemctl restart docker
+
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
