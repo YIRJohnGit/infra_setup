@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: openshift-deployment
+spec: 
+  selector:
+     matchLabels:
+       app: openshift-deployment
+  replicas: 2
+  template: 
+     metadata: 
+        labels:
+          app: openshift-deployment
+     spec:
+       containers:
+       - name: openshift
+         image: openshift/hello-openshift
+         ports:
+         - containerPort: 80
