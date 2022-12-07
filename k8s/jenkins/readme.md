@@ -15,6 +15,8 @@ kubectl create -f jenkinsdeployment.yaml -n jenkins
 kubectl get deployments -n jenkins
 kubectl create -f jenkinsservice.yaml -n jenkins
 kubectl get services -n jenkins
+```
+```
 kubectl get pods -n jenkins
 kubectl logs pod_name -n jenkins # Logs will help to get th details of jenkins installation
 ```
