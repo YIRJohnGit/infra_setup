@@ -1,7 +1,7 @@
 # Setting Up Jenkins on Kubernetes
 ```
-mkdir jenkins
-cd jenkins
+mkdir jenkins_v01
+cd jenkins_v01
 wget https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/jenkins_v01/deployment.yaml
 wget https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/jenkins_v01/service.yaml
 ```
