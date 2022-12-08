@@ -2,8 +2,8 @@
 ```
 mkdir jenkins
 cd jenkins
-wget https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/jenkins/deployment.yaml
-wget https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/jenkins/service.yaml
+wget https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/jenkins_v01/deployment.yaml
+wget https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/jenkins_v01/service.yaml
 ```
 
 ```
