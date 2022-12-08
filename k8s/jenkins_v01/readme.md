@@ -12,9 +12,11 @@ wget https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/jenkins_v
 kubectl get namespaces
 ```
 ```
-kubectl create -f jenkinsdeployment.yaml  #-n jenkins
+kubectl create -f namespace.yaml
+kubectl get namespaces
+kubectl create -f deployment.yaml  #-n jenkins
 kubectl get deployments -n jenkins
-kubectl create -f jenkinsservice.yaml # -n jenkins
+kubectl create -f service.yaml # -n jenkins
 kubectl get services -n jenkins
 ```
 ```
