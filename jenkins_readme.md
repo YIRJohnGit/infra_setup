@@ -18,9 +18,10 @@ systemctl start jenkins
 systemctl status jenkins
 ```
 
-# Toubleshooting - Uninstall
+# Uninstall
 ```
 which jenkins
+sudo apt remove -y jenkins 
 sudo apt-get purge jenkins -y #Remove Jenkins
 sudo apt-get autoclean && sudo apt-get autoremove
 
