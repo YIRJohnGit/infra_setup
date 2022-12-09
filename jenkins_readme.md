@@ -5,6 +5,15 @@
 wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.332.3_all.deb #Manually Download the Package 
 sudo dpkg -i jenkins_2.332.3_all.deb # Installing using Package Manger
 ```
+# Installation Method 
+```
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+SUDO apt update -y # Updating the systems
+SUDO apt install -y jenkins # Installing Jenkins
+SUDO apt-get full-upgrade -y # Will Upgrade the system and its patches
+```
 
 # Toubleshooting - Uninstall
 ```
