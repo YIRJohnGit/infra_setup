@@ -5,7 +5,7 @@
 wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.332.3_all.deb #Manually Download the Package 
 sudo dpkg -i jenkins_2.332.3_all.deb # Installing using Package Manger
 ```
-# Installation Method 
+# Installation Method 2
 ```
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
