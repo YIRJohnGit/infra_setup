@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+sudo wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt update -y
+sudo apt install -y jenkins
+
+sudo apt-get full-upgrade -y
