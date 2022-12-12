@@ -37,11 +37,16 @@ mongo # Will open Shell
 
 # Option 1
 https://www.mongodb.com/try/download/community-kubernetes-operator
+
+```
 sudo apt install -y mongodb-org
-
+```
+```
 tput clear
-
+```
+```
 sudo service mongod start # Start the Service
 sudo service mongod status # Get the STatus of the MOngodb Servive
 sudo service mongod stop # Stop the MOngodb Service
 sudo service mongod restart # restart the MOngodb Service
+```
