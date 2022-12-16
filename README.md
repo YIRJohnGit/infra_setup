@@ -31,6 +31,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/terraform/main/install_terraformv01.sh)"
 ```
 
+###### ***Setting Jenkins***
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/jenkins_installation.sh)"
+```
+
 # Adding Sudo User
 ```
 sudo adduser yirjohn
