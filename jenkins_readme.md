@@ -3,7 +3,27 @@
 # Installation Java
 ```
 sudo apt update
+sudo apt install default-jre              # version 2:1.11-72build1, or
+java -version
+```
+```
+sudo apt install default-jdk
+# sudo apt install openjdk-8-jdk -y
+# sudo apt install openjdk-11-jdk -y
+javac -version
+```
+```
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+```
 
+```
+sudo nano /etc/environment
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+```
+```
+source /etc/environment
+echo $JAVA_HOME
 ```
 
 # Installation Method 1
@@ -22,6 +42,27 @@ sudo apt-get full-upgrade -y # Will Upgrade the system and its patches
 
 systemctl start jenkins
 systemctl status jenkins
+```
+
+# Installation Method 3
+```
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc &gt; /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list &gt; /dev/null
+sudo apt update
+sudo apt install jenkins -y
+```
+
+# Verify Jenking Status
+```
+sudo systemctl status jenkins
+sudo systemctl enable --now jenkins # Make Jenkins Running and Active
+```
+
+# Setting Up Firwall Setting
+```
+sudo ufw allow 8080 # Open port 8080
+sudo ufw status # Get Status of Firewall
+sudo ufw enable # Enable Firewall
 ```
 
 # Uninstall Jenkins
