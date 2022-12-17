@@ -3,11 +3,11 @@
 # Installation Java
 ```
 sudo apt update
-sudo apt install default-jre              # version 2:1.11-72build1, or
-java -version
+sudo apt install -y default-jre              # version 2:1.11-72build1, or
+java --version
 ```
 ```
-sudo apt install default-jdk
+sudo apt install -y default-jdk
 # sudo apt install openjdk-8-jdk -y
 # sudo apt install openjdk-11-jdk -y
 javac -version
