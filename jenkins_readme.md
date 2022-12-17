@@ -1,6 +1,10 @@
 # Jenkins Installation
 
 # Installation Java
+```
+sudo apt update
+
+```
 
 # Installation Method 1
 ```
