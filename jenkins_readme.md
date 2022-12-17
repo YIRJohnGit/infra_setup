@@ -26,6 +26,6 @@ sudo apt-get purge jenkins -y #Remove Jenkins
 sudo apt-get autoclean && sudo apt-get autoremove
 
 mv /var/lib/dpkg/info/jenkins.* /tmp/  # Remove Temp Folder
-dpkg --remove --force-remove-reinstreq jenkins  # 
-dpkg --purge Jenkins
+sudo dpkg --remove --force-remove-reinstreq jenkins  # 
+sudo dpkg --purge Jenkins
 ```
