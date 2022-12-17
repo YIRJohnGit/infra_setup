@@ -1,5 +1,7 @@
 # Jenkins Installation
 
+# Installation Java
+
 # Installation Method 1
 ```
 wget https://pkg.jenkins.io/debian-stable/binary/jenkins_2.332.3_all.deb #Manually Download the Package 
@@ -18,7 +20,7 @@ systemctl start jenkins
 systemctl status jenkins
 ```
 
-# Uninstall
+# Uninstall Jenkins
 ```
 which jenkins
 sudo apt remove -y jenkins 
@@ -29,3 +31,5 @@ mv /var/lib/dpkg/info/jenkins.* /tmp/  # Remove Temp Folder
 sudo dpkg --remove --force-remove-reinstreq jenkins  # 
 sudo dpkg --purge Jenkins
 ```
+
+# Uninstall Java
