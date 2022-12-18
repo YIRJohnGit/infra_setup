@@ -17,3 +17,6 @@ sudo systemctl status jenkins
 sudo systemctl enable jenkins
 #sudo apt-get full-upgrade -y
 
+echo "Below is the Password for Starting your jenkins"
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
