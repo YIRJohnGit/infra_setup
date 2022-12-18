@@ -14,5 +14,6 @@ sudo apt update -y
 sudo apt-get install -y jenkins
 sudo apt update -y
 sudo systemctl status jenkins
+sudo systemctl enable jenkins
 #sudo apt-get full-upgrade -y
 
