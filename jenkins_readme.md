@@ -69,7 +69,9 @@ sudo ufw enable # Enable Firewall
 # Uninstall Jenkins
 ```
 which jenkins
-sudo apt remove -y jenkins 
+sudo service jenkins stop
+sudo apt-get remove --purge -y jenkins 
+sudo apt-get remove --auto-remove jenkins 
 sudo apt-get purge jenkins -y #Remove Jenkins
 sudo apt-get autoclean && sudo apt-get autoremove
 
