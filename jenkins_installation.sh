@@ -3,7 +3,9 @@
 sudo curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 sudo apt update -y
 #sudo apt install -y openjdk-8-jdk openjdk-8-jre
-sudo apt install -y openjdk-jdk openjdk-jre
+sudo apt install -y default-jdk
+sudo apt update
+sudo apt install -y default-jre
 sudo apt update -y
 
 sudo wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
