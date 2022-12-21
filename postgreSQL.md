@@ -82,7 +82,7 @@ _Result for Creating Table_
 \dt
 ```
 _Verify the list of tables_
-```
+
 ![image](https://user-images.githubusercontent.com/111234771/209013817-0be98fd8-4704-4e1b-96f7-d3ba2b61b7b8.png)
 
 
@@ -91,3 +91,12 @@ _Verify the list of tables_
 INSERT INTO clients (first_name, last_name, role) VALUES ('John', 'Smith', 'CEO');
 ```
 _Result for Inserting New Record_
+
+**Query Table to get all rows**
+```
+SELECT * FROM clients;
+```
+
+![image](https://user-images.githubusercontent.com/111234771/209014039-c850af95-c8d2-41fb-a6c3-6cce0776c1d7.png)
+
+```
