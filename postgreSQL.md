@@ -41,4 +41,53 @@ _Result_
 _Search Result of Getting all the database_
 ![image](https://user-images.githubusercontent.com/111234771/209012295-fc58ae2a-7e10-48c8-ba84-af6165991141.png)
 
+**Get List of All User and their previllages***
+```
+\du
+```
+_List of User Previllages_
+![image](https://user-images.githubusercontent.com/111234771/209012632-0abbb0f3-4c6a-46a9-a1d5-84d04b4852b3.png)
 
+**Setting Up User Password***
+```
+\password postgres
+```
+_Password reseting_ ![image](https://user-images.githubusercontent.com/111234771/209012791-abea98a0-797b-4277-8280-2a0e01485af4.png)
+
+**Creating New Database in PostGreSQL Terminal**
+```
+CREATE DATABASE test_erp;
+```
+![image](https://user-images.githubusercontent.com/111234771/209012957-1c434079-5a20-4447-90d9-21dc713a3daf.png)
+
+
+**Connecting to the Database**
+```
+\c test_erp
+```
+_Result of Connecting the Database < test_erp >
+![image](https://user-images.githubusercontent.com/111234771/209013129-7e644852-9162-4412-9849-2337957c2dd6.png)
+
+
+**Creating the Table with Primary Key**
+```
+CREATE TABLE IF NOT EXISTS clients (id SERIAL PRIMARY KEY, first_name VARCHAR, last_name VARCHAR, role VARCHAR);
+```
+_Result for Creating Table_
+![image](https://user-images.githubusercontent.com/111234771/209013743-715a1392-6658-4b5b-9b0b-5937c872bd92.png)
+
+
+**Verify the List of Tables**
+```
+\dt
+```
+_Verify the list of tables_
+```
+![image](https://user-images.githubusercontent.com/111234771/209013817-0be98fd8-4704-4e1b-96f7-d3ba2b61b7b8.png)
+
+
+**Inserting an Record**
+```
+INSERT INTO clients (first_name, last_name, role) VALUES ('John', 'Smith', 'CEO');
+```
+_Result for Inserting New Record_
