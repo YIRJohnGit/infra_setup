@@ -91,12 +91,13 @@ _Verify the list of tables_
 INSERT INTO clients (first_name, last_name, role) VALUES ('John', 'Smith', 'CEO');
 ```
 _Result for Inserting New Record_
+![image](https://user-images.githubusercontent.com/111234771/209014039-c850af95-c8d2-41fb-a6c3-6cce0776c1d7.png)
 
 **Query Table to get all rows**
 ```
 SELECT * FROM clients;
 ```
 
-![image](https://user-images.githubusercontent.com/111234771/209014039-c850af95-c8d2-41fb-a6c3-6cce0776c1d7.png)
+![image](https://user-images.githubusercontent.com/111234771/209014315-4cd64766-8fbb-4b7a-897b-f0871275a007.png)
 
 ```
