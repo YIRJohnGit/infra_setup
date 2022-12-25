@@ -10,6 +10,23 @@ _Result_
 
 
 ## Step 1 - Downloading and Extracting
+**Downloading the Zookeeper**
 ```
 curl  "https://dlcdn.apache.org/zookeeper/zookeeper-3.8.0/apache-zookeeper-3.8.0-bin.tar.gz" --output ~/Downloads/zookeeper.tgz
+```
+**Extracting the Files in user local folder**
+```
+sudo mkdir -p /usr/local/zookper
+cd /usr/local/zookper/
+sudo tar -xvzf ~/Downloads/zookeeper.tgz --strip 1
+cd
+```
+
+## Step 2 - Updating the Path in BaseFile
+**Updating the content**
+- sudo vi ~/.bashrc
+```
+export KAFKA_HOME=/home/kafka/kafka
+export ZOOKPER_HOME=/usr/local/zookper
+export PATH=$PATH:$KAFKA_HOME/bin:$ZOOKPER_HOME/bin
 ```
