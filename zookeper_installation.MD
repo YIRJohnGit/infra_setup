@@ -62,7 +62,8 @@ _Reference View_
 **...for kafka (Optional)**
 - sudo vi ~/kafka/config/server.properties
 - Uncomment < listeners=PLAINTEXT://:9092 >
-
+![image](https://user-images.githubusercontent.com/111234771/209479788-02f3f12b-3731-4a7e-9647-fc34408a9abc.png)
+delete
 ![image](https://user-images.githubusercontent.com/111234771/209476861-710afb05-3b31-4d28-a9cf-5c56f2a42ed0.png)
 
 
