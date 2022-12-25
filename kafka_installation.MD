@@ -1,6 +1,22 @@
 # Install Apache Kafka on Ubuntu 20.04
+
+## Stpe 1 - Sudo User Creation 
 ```
 sudo adduser kafka
+sudo adduser kafka sudo
+su -l kafka
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209464207-a4517cfa-511d-4604-8d71-3c662ad0d1e3.png)
+
+![image](https://user-images.githubusercontent.com/111234771/209464319-b3417b9e-43ca-4c6c-9d93-4f8836e765f1.png)
+
+
+## Stpe 2 - Downloading and Extracting Kafla
+```
+mkdir ~/Downloads
+curl --continue-at "https://downloads.apache.org/kafka/2.6.3/kafka_2.13-2.6.3.tgz" -o ~/Downloads/kafka.tgz
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/209465160-c2f9d25c-ff5a-4dd9-a024-3387f2983664.png)
+
