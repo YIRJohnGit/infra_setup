@@ -46,17 +46,20 @@ export PATH KAFKA_HOME ZOOKER_HOME
 sudo mkdir -p /usr/local/zookper/data
 ```
 - sudo vi ~/kafka/config/zookeeper.properties
-- add the irectory path of zookeeper
+- add the directory path of zookeeper
 
 ```
 dataDir=/usr/local/zookper/data
 ```
 - Verify the changes
 ```
-
+cat -n  ~/kafka/config/zookeeper.properties | grep 'dataDir='
 ```
+_Reference View_
+![image](https://user-images.githubusercontent.com/111234771/209479325-ffdf0f5e-aef7-4a3d-916b-51054df29b1d.png)
 
-**... for kafka (Optional) **
+
+**...for kafka (Optional)**
 - sudo vi ~/kafka/config/server.properties
 - Uncomment < listeners=PLAINTEXT://:9092 >
 
