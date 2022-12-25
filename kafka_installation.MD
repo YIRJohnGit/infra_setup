@@ -58,6 +58,11 @@ _Result_
 
 ![image](https://user-images.githubusercontent.com/111234771/209466628-58392c59-5547-46d9-bd1f-36399ee934a0.png)
 
+**Verify the changes**
+```
+cat -n  ~/kafka/config/server.properties | grep 'kafka/logs\|delete.topic'
+```
+
 _Final Result_
 ![image](https://user-images.githubusercontent.com/111234771/209466924-a43ced86-8363-454f-bc5b-767d17ec092d.png)
 
