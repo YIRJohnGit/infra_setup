@@ -22,7 +22,8 @@ ls -l
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209465160-c2f9d25c-ff5a-4dd9-a024-3387f2983664.png)
-![image](https://user-images.githubusercontent.com/111234771/209465337-deac7410-b405-4ffc-9d26-58e8bb4d6dec.png)
+![image](https://user-images.githubusercontent.com/111234771/209465769-62645fe4-eaff-48f5-acc8-8c9f21134e3e.png)
+
 
 **Move the Binary to installation Location and Extract**
 ```
