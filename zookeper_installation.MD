@@ -40,3 +40,6 @@ export PATH KAFKA_HOME ZOOKER_HOME
 
 **Updating the Configureation logs**
 - sudo vi ~/kafka/config/server.properties
+- Uncomment < listeners=PLAINTEXT://:9092 >
+
+![image](https://user-images.githubusercontent.com/111234771/209476861-710afb05-3b31-4d28-a9cf-5c56f2a42ed0.png)
