@@ -37,7 +37,7 @@ KAFKA_HOME=/home/kafka/kafka
 ZOOKPER_HOME=/usr/local/zookper
 export PATH KAFKA_HOME ZOOKER_HOME
 ```
-## Step 2 - Updating the Configuration Properties
+## Step 3 - Updating the Configuration Properties
 **Updating the Configureation logs**
 
 **...for Zookeeper Data Directory**
@@ -73,3 +73,5 @@ cat -n  ~/kafka/config/server.properties | grep 'kafka/logs\|delete.topic\|liste
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209477130-2bb008dd-3a5e-431d-ad20-380c34bb26dc.png)
 
+
+## Step 4 - Testing with Sample
