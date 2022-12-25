@@ -1,5 +1,7 @@
 # Install Apache Kafka on Ubuntu 20.04
 
+- https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04
+ 
 ## Stpe 1 - Sudo User Creation 
 ```
 sudo adduser kafka
