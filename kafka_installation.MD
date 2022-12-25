@@ -1,7 +1,8 @@
 # Install Apache Kafka on Ubuntu 20.04
 
 - https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04
- 
+- Require Java Versoin Installed
+
 ## Stpe 1 - Sudo User Creation 
 ```
 sudo adduser kafka
@@ -98,10 +99,13 @@ WantedBy=multi-user.target
 
 **Verify the Server Status**
 ```
+sudo systemctl daemon-reload
 sudo systemctl status kafka
 sudo systemctl start kafka
 sudo systemctl status kafka
 ```
+_Working Result_
+![image](https://user-images.githubusercontent.com/111234771/209470417-1bd0d96e-4c56-45cf-b9bc-f20cefefbe57.png)
 
 
 
@@ -113,3 +117,16 @@ sudo systemctl status kafka
 
 _The Error_
 ![image](https://user-images.githubusercontent.com/111234771/209468090-6163d72c-67ee-4f6c-926d-8ab19b0f308c.png)
+```
+sudo apt update
+sudo apt install -y default-jdk
+sudo apt update
+sudo apt install -y default-jre
+sudo systemctl daemon-reload
+sudo systemctl stop kafka
+sudo systemctl start kafka
+sudo systemctl enable kafka
+sudo systemctl status kafka
+```
+_Error Fixed_
+![image](https://user-images.githubusercontent.com/111234771/209470528-3fdfc2fe-89d7-48e6-ada3-94aa3fabf060.png)
