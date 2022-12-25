@@ -37,7 +37,7 @@ KAFKA_HOME=/home/kafka/kafka
 ZOOKPER_HOME=/usr/local/zookper
 export PATH KAFKA_HOME ZOOKER_HOME
 ```
-
+## Step 2 - Updating the Configuration Properties
 **Updating the Configureation logs**
 - sudo vi ~/kafka/config/server.properties
 - Uncomment < listeners=PLAINTEXT://:9092 >
@@ -49,6 +49,6 @@ export PATH KAFKA_HOME ZOOKER_HOME
 ```
 cat -n  ~/kafka/config/server.properties | grep 'kafka/logs\|delete.topic\|listeners=PLAINTEXT://:9092'
 ```
-
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209477130-2bb008dd-3a5e-431d-ad20-380c34bb26dc.png)
+
