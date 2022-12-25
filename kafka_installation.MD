@@ -135,6 +135,8 @@ _Start a new Terminal and run the below, you will get the result in the consumer
 ```
 echo "Hello World from YIR John and for Simpragma!" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null
 ```
+_Result_
+![tempsnip](https://user-images.githubusercontent.com/111234771/209471854-f43bc6b0-9e31-4465-a799-1ffd033d1edd.png)
 
 
 # Troubleshooting 
