@@ -30,3 +30,10 @@ export KAFKA_HOME=/home/kafka/kafka
 export ZOOKPER_HOME=/usr/local/zookper
 export PATH=$PATH:$KAFKA_HOME/bin:$ZOOKPER_HOME/bin
 ```
+
+- sudo vi /etc/profile
+```
+KAFKA_HOME=/home/kafka/kafka
+ZOOKPER_HOME=/usr/local/zookper
+export PATH KAFKA_HOME ZOOKER_HOME
+```
