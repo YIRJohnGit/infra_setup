@@ -114,9 +114,12 @@ _Working Result_
 ![image](https://user-images.githubusercontent.com/111234771/209470417-1bd0d96e-4c56-45cf-b9bc-f20cefefbe57.png)
 
 
+## Stpe 5 - Testing the Kafka Installation
+**To begin, create a topic named __TutorialTopic__**
 
-
-
+```
+~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic TutorialTopic
+```
 
 
 # Troubleshooting 
