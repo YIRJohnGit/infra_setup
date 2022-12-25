@@ -26,7 +26,7 @@ sudo -u postgres psql
 _Result: Getting the postgreSQL Terminal_
 ![image](https://user-images.githubusercontent.com/111234771/209011730-5a8cd614-5ca4-4a3c-a4c5-088841327ec9.png)
 
-**Verify the Connection Info in the PostgreSQL Terminal
+**Verify the Connection Info in the PostgreSQL Terminal**
 ```
 \conninfo
 ```
@@ -34,21 +34,21 @@ _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209011886-c0db4f45-bf48-4e5f-bcf7-69b7e9a8f604.png)
 
 
-**Get the List of All database in postgreSQL***
+**Get the List of All database in postgreSQL**
 ```
 \l
 ```
 _Search Result of Getting all the database_
 ![image](https://user-images.githubusercontent.com/111234771/209012295-fc58ae2a-7e10-48c8-ba84-af6165991141.png)
 
-**Get List of All User and their previllages***
+**Get List of All User and their previllages**
 ```
 \du
 ```
 _List of User Previllages_
 ![image](https://user-images.githubusercontent.com/111234771/209012632-0abbb0f3-4c6a-46a9-a1d5-84d04b4852b3.png)
 
-**Setting Up User Password***
+**Setting Up User Password**
 ```
 \password postgres
 ```
