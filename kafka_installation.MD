@@ -52,3 +52,5 @@ _Result_
 _Final Result_
 ![image](https://user-images.githubusercontent.com/111234771/209466924-a43ced86-8363-454f-bc5b-767d17ec092d.png)
 
+## Stpe 4 - Creating Systemd Unit Files and Starting the Kafka Server
+**Deleting the Kafka Topics and Adding the Log Files**
