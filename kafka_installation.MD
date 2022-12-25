@@ -93,3 +93,21 @@ Restart=on-abnormal
 [Install]
 WantedBy=multi-user.target
 ```
+
+**Verify the Server Status**
+```
+sudo systemctl status kafka
+sudo systemctl start kafka
+sudo systemctl status kafka
+```
+
+
+
+
+
+
+
+# Troubleshooting 
+
+_The Error_
+![image](https://user-images.githubusercontent.com/111234771/209468090-6163d72c-67ee-4f6c-926d-8ab19b0f308c.png)
