@@ -46,3 +46,22 @@ ssh-keygen
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/201989515-75087d2b-8658-4bab-a4ca-ffd4557b84d2.png)
+
+
+## Remove Admin Privillages
+- Remove the yirjohn user from the sudo group
+```
+sudo deluser yirjohn sudo
+```
+- To further improve your yirjohn server’s security, lock the yirjohn user’s password using the passwd command
+```
+sudo passwd yirjohn -l
+```
+- at this point, only root or a sudo user can log in as kafka
+```
+sudo su - yirjohn
+```
+- In the future, if you want to unlock it, use passwd with the -u option
+```
+sudo passwd yirjohn -u
+```
