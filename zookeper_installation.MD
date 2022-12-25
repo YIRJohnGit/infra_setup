@@ -39,6 +39,24 @@ export PATH KAFKA_HOME ZOOKER_HOME
 ```
 ## Step 2 - Updating the Configuration Properties
 **Updating the Configureation logs**
+
+**...for Zookeeper Data Directory**
+- Setting Up the new directory
+```
+sudo mkdir -p /usr/local/zookper/data
+```
+- sudo vi ~/kafka/config/zookeeper.properties
+- add the irectory path of zookeeper
+
+```
+dataDir=/usr/local/zookper/data
+```
+- Verify the changes
+```
+
+```
+
+**... for kafka (Optional) **
 - sudo vi ~/kafka/config/server.properties
 - Uncomment < listeners=PLAINTEXT://:9092 >
 
