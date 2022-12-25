@@ -75,3 +75,7 @@ _Result_
 
 
 ## Step 4 - Testing with Sample
+
+```
+telnet localhost 2181
+```
