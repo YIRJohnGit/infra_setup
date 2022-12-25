@@ -51,3 +51,4 @@ cat -n  ~/kafka/config/server.properties | grep 'kafka/logs\|delete.topic\|liste
 ```
 
 _Result_
+![image](https://user-images.githubusercontent.com/111234771/209477130-2bb008dd-3a5e-431d-ad20-380c34bb26dc.png)
