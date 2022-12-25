@@ -37,3 +37,6 @@ KAFKA_HOME=/home/kafka/kafka
 ZOOKPER_HOME=/usr/local/zookper
 export PATH KAFKA_HOME ZOOKER_HOME
 ```
+
+**Updating the Configureation logs**
+- nano ~/kafka/config/server.properties
