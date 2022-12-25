@@ -27,6 +27,8 @@ _Result_
 
 **Move the Binary to installation Location and Extract**
 ```
-mkdir ~/kafka && cd ~/kafka
+mkdir -p ~/kafka && cd ~/kafka
 tar -xvzf ~/Downloads/kafka.tgz --strip 1
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/209465832-d6e4290d-0bc2-4335-ac38-77089056d6ef.png)
