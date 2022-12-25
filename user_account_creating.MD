@@ -1,6 +1,6 @@
 # Setting up New Account
 
-# Adding Sudo User
+## Adding Sudo User
 ```
 sudo adduser yirjohn
 ```
@@ -18,6 +18,16 @@ id yirjohn
 ```
 ![image](https://user-images.githubusercontent.com/111234771/201988396-5e5f68cb-68c9-4473-80c6-6e5ea5baa98d.png)
 
+**Option 1 for Addid user to to SUDO**
+```
+sudo adduser yirjohn sudo
+```
+_Login with new user_
+```
+su -l yirjohn
+```
+
+**Option 2 for Addid user to to SUDO**
 ```
 sudo usermod -aG sudo yirjohn
 groups yirjohn
