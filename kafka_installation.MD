@@ -1,7 +1,13 @@
 # Install Apache Kafka on Ubuntu 20.04
 
 - https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-20-04
-- Require Java Versoin Installed
+- Require Java VERSION Installed
+```
+java --version
+javac --version
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/209470734-a10c2052-d78b-4d88-879e-1aa6014b6846.png)
 
 ## Stpe 1 - Sudo User Creation 
 ```
