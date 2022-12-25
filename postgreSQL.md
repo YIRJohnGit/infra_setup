@@ -100,11 +100,10 @@ SELECT * FROM clients;
 
 ![image](https://user-images.githubusercontent.com/111234771/209014315-4cd64766-8fbb-4b7a-897b-f0871275a007.png)
 
-```
+
 **Quit the Postgre Terminal**
 ```
 /q
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209463997-572fdc22-0022-41f9-a9d1-d9cf8684c00c.png)
-
