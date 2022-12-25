@@ -13,10 +13,19 @@ _Result_
 
 
 ## Stpe 2 - Downloading and Extracting Kafla
+**Download the Binary File**
 ```
 mkdir ~/Downloads
-curl --continue-at "https://downloads.apache.org/kafka/2.6.3/kafka_2.13-2.6.3.tgz" -o ~/Downloads/kafka.tgz
+#curl "https://downloads.apache.org/kafka/2.6.3/kafka_2.13-2.6.3.tgz" -o ~/Downloads/kafka.tgz
+curl  "https://dlcdn.apache.org/kafka/3.2.3/kafka_2.12-3.2.3.tgz" -o ~/Downloads/kafka.tgz
+ls -l
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209465160-c2f9d25c-ff5a-4dd9-a024-3387f2983664.png)
+![image](https://user-images.githubusercontent.com/111234771/209465337-deac7410-b405-4ffc-9d26-58e8bb4d6dec.png)
 
+**Move the Binary to installation Location and Extract**
+```
+mkdir ~/kafka && cd ~/kafka
+tar -xvzf ~/Downloads/kafka.tgz --strip 1
+```
