@@ -116,10 +116,21 @@ _Working Result_
 
 ## Stpe 5 - Testing the Kafka Installation
 **To begin, create a topic named __TutorialTopic__**
-
 ```
 ~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic TutorialTopic
 ```
+**Now publish the string "Hello, World" to the __TutorialTopic__**
+```
+echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null
+```
+**Next, create a Kafka consumer using the kafka-console-consumer.sh script __TutorialTopic__**
+```
+~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic TutorialTopic --from-beginning
+```
+
+_Testing Kafka Result_
+![image](https://user-images.githubusercontent.com/111234771/209471281-e0ede740-cc7a-44b4-a9fc-7643e18760e6.png)
+
 
 
 # Troubleshooting 
