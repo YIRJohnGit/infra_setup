@@ -32,3 +32,19 @@ tar -xvzf ~/Downloads/kafka.tgz --strip 1
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209465832-d6e4290d-0bc2-4335-ac38-77089056d6ef.png)
+
+## Stpe 3 - Configuring the Kafka Server
+**Deleting the Kafka Topics and Adding the Log Files**
+- nano ~/kafka/config/server.properties
+```
+
+log.dirs=/home/kafka/logs
+
+#setting will allow to delete Kafka topics.
+delete.topic.enable = true
+```
+
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/209466656-fac10fe3-9387-4d45-8725-e94d158b8345.png)
+
+![image](https://user-images.githubusercontent.com/111234771/209466628-58392c59-5547-46d9-bd1f-36399ee934a0.png)
