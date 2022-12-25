@@ -75,3 +75,21 @@ _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209467655-756c4be1-ba50-4089-8ac3-3ee897086e8c.png)
 
 
+**...set up for creating the systemd service file for kafka**
+- sudo nano /etc/systemd/system/kafka.service
+- Add the following content to the file
+```
+[Unit]
+Requires=zookeeper.service
+After=zookeeper.service
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/bin/sh -c '/home/kafka/kafka/bin/kafka-server-start.sh /home/kafka/kafka/config/server.properties > /home/kafka/kafka/kafka.log 2>&1'
+ExecStop=/home/kafka/kafka/bin/kafka-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+```
