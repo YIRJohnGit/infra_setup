@@ -39,4 +39,4 @@ export PATH KAFKA_HOME ZOOKER_HOME
 ```
 
 **Updating the Configureation logs**
-- nano ~/kafka/config/server.properties
+- sudo vi ~/kafka/config/server.properties
