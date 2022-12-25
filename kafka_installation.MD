@@ -53,4 +53,25 @@ _Final Result_
 ![image](https://user-images.githubusercontent.com/111234771/209466924-a43ced86-8363-454f-bc5b-767d17ec092d.png)
 
 ## Stpe 4 - Creating Systemd Unit Files and Starting the Kafka Server
-**Deleting the Kafka Topics and Adding the Log Files**
+**...set up for starting, stopping, and restarting Kafka with unit file for zookeeper**
+- sudo nano /etc/systemd/system/zookeeper.service
+- Add the below content to the file and save
+```
+[Unit]
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/home/kafka/kafka/bin/zookeeper-server-start.sh /home/kafka/kafka/config/zookeeper.properties
+ExecStop=/home/kafka/kafka/bin/zookeeper-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/209467655-756c4be1-ba50-4089-8ac3-3ee897086e8c.png)
+
+
