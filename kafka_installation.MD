@@ -131,6 +131,10 @@ echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localh
 _Testing Kafka Result_
 ![image](https://user-images.githubusercontent.com/111234771/209471281-e0ede740-cc7a-44b4-a9fc-7643e18760e6.png)
 
+_Start a new Terminal and run the below, you will get the result in the consumer output terminal_
+```
+echo "Hello World from YIR John and for Simpragma!" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TutorialTopic > /dev/null
+```
 
 
 # Troubleshooting 
