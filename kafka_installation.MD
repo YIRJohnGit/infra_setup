@@ -139,7 +139,7 @@ _Result_
 ![tempsnip](https://user-images.githubusercontent.com/111234771/209471854-f43bc6b0-9e31-4465-a799-1ffd033d1edd.png)
 
 
-# Troubleshooting 
+# Troubleshooting 1
 
 _The Error_
 ![image](https://user-images.githubusercontent.com/111234771/209468090-6163d72c-67ee-4f6c-926d-8ab19b0f308c.png)
