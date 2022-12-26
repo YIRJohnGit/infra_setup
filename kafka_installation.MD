@@ -163,6 +163,7 @@ _Error Fixed_
 ![image](https://user-images.githubusercontent.com/111234771/209470528-3fdfc2fe-89d7-48e6-ada3-94aa3fabf060.png)
 
 # Troubleshooting 2
+
 | Attempt | #1    | #2    |
 | :---:   | :---: | :---: |
 | Seconds | 301   | 283   |
