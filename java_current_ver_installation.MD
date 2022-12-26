@@ -16,7 +16,10 @@ javac -version
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
 ```
-
+**Findout the Softlink of Java**
+```
+readlink -f $(which java)
+```
 ```
 which java
 sudo nano /etc/environment
