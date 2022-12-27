@@ -144,6 +144,250 @@ _Result_
 ![tempsnip](https://user-images.githubusercontent.com/111234771/209471854-f43bc6b0-9e31-4465-a799-1ffd033d1edd.png)
 
 
+# OPTION 3 for Complete Setup using terminal
+
+sudo apt install -y openjdk-8-jdk 
+sudo apt update
+sudo apt-get install -y zookeeperd
+#telnet localhost 2181
+
+sudo ufw status
+sudo ufw enable
+sudo ufw allow 22/tcp comment 'Open port ssh tcp port 22' # follows to open ssh port
+sudo ufw status
+
+java -version
+sudo apt install -y default-jre
+sudo apt install -y default-jdk 
+java -version
+
+
+cat /etc/os-release
+
+#https://kafka.apache.org/downloads
+https://downloads.apache.org/kafka/3.3.1/kafka_2.13-3.3.1.tgz
+
+
+cd ~/Downloads
+#wget --output-document=kafka.tgz --continue https://archive.apache.org/dist/kafka/3.2.0/kafka_2.12-3.2.0.tgz 
+wget --output-document=kafka.tgz --continue https://downloads.apache.org/kafka/3.3.1/kafka_2.13-3.3.1.tgz
+
+wget --continue https://dlcdn.apache.org/zookeeper/zookeeper-3.8.0/apache-zookeeper-3.8.0-bin.tar.gz --output-document=zookeeper.tar.gz
+
+sudo tar -xvf zookeeper.tar.gz
+sudo tar -xzf kafka.tgz
+
+sudo mv apache-zookeeper-3.8.0-bin/ /usr/local/zookper
+sudo mv kafka_2.12-3.2.0 /usr/local/kafka
+
+sudo vi ~/.bashrc
+	# Adding the path for Kafka and Zookeeper
+	export KAFKA_HOME=/usr/local/kafka
+	export ZOOKPER_HOME=/usr/local/zookper
+	export PATH=$PATH:$KAFKA_HOME/bin:$ZOOKPER_HOME/bin
+
+sudo vi /etc/profile
+	# Adding the path for Kafka and zookeeper
+	KAFKA_HOME=/usr/local/kafka
+	ZOOKER_HOME=/usr/local/zookper
+	export PATH KAFKA_HOME ZOOKER_HOME
+
+
+sudo mkdir -p /usr/local/kafka/data-logs
+
+sudo vi /usr/local/kafka/config/server.properties
+	listeners=PLAINTEXT://:9092
+	log.dirs=/usr/local/kafka/data-logs
+
+sudo mkdir -p /usr/local/zookper/data
+sudo vi /usr/local/kafka/config/zookeeper.properties
+	dataDir=/usr/local/zookper/data
+
+
+#https://hevodata.com/blog/how-to-install-kafka-on-ubuntu/
+
+sudo systemctl daemon-reload
+sudo systemctl status kafka
+sudo systemctl status zookeeper
+
+ sudo systemctl start kafka
+ sudo systemctl start zookeeper
+
+which zookeeper-server-stop.sh
+which zookeeper-server-start.sh 
+
+#find / -name "zookeeper.properties"
+
+sudo vi /etc/systemd/system/zookeeper.service
+[Unit]
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/usr/local/kafka/bin/zookeeper-server-start.sh /usr/local/kafka/config/zookeeper.properties
+ExecStop=/usr/local/kafka/bin/zookeeper-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+
+#SAVE AND CLOSE THE ABOVE FILE
+
+
+#Locate the path and copy the path
+which kafka-server-start.sh
+which kafka-server-stop.sh
+
+sudo vi /etc/systemd/system/kafka.service
+[Unit]
+Requires=zookeeper.service
+After=zookeeper.service
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/bin/sh -c '/usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties > /tmp/kafka-logs 2>&1'
+ExecStop=/usr/local/kafka/bin/kafka-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl daemon-reload
+sudo chmod 777 /tmp/kafka-logs
+sudo chmod 0644 /tmp/kafka-logs # This is the deault File Property
+
+ls -l /tmp/kafka-logs
+
+sudo vi /etc/sudoers
+	kafka   ALL=(ALL:ALL) ALL
+
+cat -n /tmp/kafka-logs | head -n10
+
+#Get the Kafa Current Directy and the same in to the environment
+pwd
+
+	/usr/local/kafka
+
+sudo vi /etc/environment
+#Add the below path to the path
+ :/usr/local/kafka/bin
+
+#Save and close
+
+source /etc/environment
+kafka-topics.sh
+
+cd /home/kafka/kafka_2.13-3.3.1
+zookeeper-server-start.sh config/zookeeper.properties
+
+Terminal 1
+cd /usr/local/kafka
+zookeeper-server-start.sh config/zookeeper.properties
+
+ sudo vi /usr/local/kafka/config/server.properties
+
+
+
+
+
+
+
+
+===== Option 3 =====
+https://fitdevops.in/how-to-install-kafka-zookeeper-on-ubuntu/
+
+sudo su -
+
+sudo apt install openjdk-8-jre-headless
+sudo update-alternatives --config java
+
+sudo adduser --system --no-create-home --disabled-password --disabled-login kafka
+
+cd /opt/
+mkdir kafka
+
+wget https://downloads.apache.org/kafka/3.3.1/kafka_2.13-3.3.1.tgz
+
+tar xvzf kafka_2.13-3.3.1.tgz --directory kafka --strip-components 1
+
+mkdir /var/lib/kafka
+mkdir /var/lib/kafka/data
+
+vi /opt/kafka/config/server.properties
+delete.topic.enable=true
+log.dirs=/var/lib/kafka/data
+
+chown -R kafka: /var/lib/kafka
+chown -R kafka: /opt/kafka
+
+
+
+apt-get install -y zookeeperd
+
+
+
+vi /etc/systemd/system/zookeeper.service
+[Unit]
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties
+ExecStop=/opt/kafka/bin/zookeeper-server-stop.sh
+Restart=on-abnormal
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+vi /etc/systemd/system/kafka.service
+[Unit]
+Requires=zookeeper.service
+After=zookeeper.service
+Description=High-available, distributed message broker
+After=network.target
+
+[Service]
+Type=simple
+User=kafka
+ExecStart=/bin/sh -c '/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties'
+ExecStop=/opt/kafka/bin/kafka-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+
+
+systemctl start kafka
+systemctl enable kafka
+
+systemctl status kafka
+
+
+
+start the Zookeeper service and enable
+systemctl start zookeeper
+systemctl enable zookeeper
+systemctl status zookeeper
+
+Kafka runs on the port 9092 and the Zookeeper runs on the port 2181.
+
+
+/opt/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic yirforsimpragma
+
+
+echo "Testing Kafka by YIRJohn" | /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic yirforsimpragma > /dev/null
+
+/opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic yirforsimpragma --from-beginning
+
+
 # Troubleshooting 1
 
 _The Error_
