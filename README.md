@@ -1,7 +1,8 @@
 # Setting Up Infrastructure Ubuntu
 - Incase if you need and issue please call me, will assist you to fix the issue
 - How to user this?
-  - Go to the shell terminal and copy the link from this repo and paste in your installation environment 
+  - Each Installation setup is having document file, refer the document to gain more confidence
+  - Copy the link from this repo and paste in your installation environment using temrinal  
 
 ### Tested in Linux Ubuntu ###
 
@@ -45,6 +46,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/mai
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/jenkins_installation.sh)"
 ```
 
+
+###### ***Installation of Postgre SQL***
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/postgreSQL_installation.sh)"
+```
 
 ###### ***Setting Kafka and Zookeeper***
 ```
