@@ -40,3 +40,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/mai
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/jenkins_installation.sh)"
 ```
+
+
+###### ***Setting Kafka and Zookeeper***
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/kafka_zookeeper_install.sh)"
+```
+
