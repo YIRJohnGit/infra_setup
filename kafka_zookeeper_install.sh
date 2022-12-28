@@ -18,14 +18,8 @@ tar xvzf kafka_2.13-3.3.1.tgz --directory kafka --strip-components 1
 mkdir /var/lib/kafka
 mkdir /var/lib/kafka/data
 
-
-vi /opt/kafka/config/server.properties
-    log.dirs=/var/lib/kafka/data
-
-
-    #Adding the delete topic to true
-    delete.topic.enable=true
-
+sed -i 's/log.dirs=/#log.dirs=/g' /opt/kafka/config/server.properties 
+echo -e "#Adding the delete topic enable to true\ndelete.topic.enable=true\n\n#Adding the Kafka Log Directory\nlog.dirs=/var/lib/kafka/data" >> /opt/kafka/config/server.properties
 
 chown -R kafka: /var/lib/kafka
 chown -R kafka: /opt/kafka
