@@ -81,10 +81,14 @@ echo "Testing Kafka by YIRJohn" | /opt/kafka/bin/kafka-console-producer.sh --bro
 
 
 echo "please runing the below commands in in new terminal 2" 
-echo ' systemctl status zookeeper
+echo '
+systemctl status zookeeper
 systemctl status kafka
 
 echo "Hello World @2, from YIR John and for Simpragma! " | /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic yirforsimpragma > /dev/null
+
 /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic yirforsimpragma --from-beginning
+
 echo "Hello World @3, from YIR John for Simpragma! " | /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic yirforsimpragma > /dev/null
+
 '
