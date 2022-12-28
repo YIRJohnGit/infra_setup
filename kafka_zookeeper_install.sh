@@ -77,6 +77,7 @@ echo "Testing Kafka by YIRJohn" | /opt/kafka/bin/kafka-console-producer.sh --bro
 
 
 echo "please runing the below commands in in new terminal 2" 
+echo "=====================================================" 
 echo '
 systemctl status zookeeper
 systemctl status kafka
