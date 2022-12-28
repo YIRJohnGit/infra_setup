@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "This is the 1st Version of Kafka and Zookepr setup on Ubuntu 20 "
+echo "================================================================"
 sudo su -
 
 java --version
