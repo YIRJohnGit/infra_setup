@@ -1,7 +1,7 @@
 # Setting Up Infrastructure Ubuntu
 - Incase if you need and issue please call me, will assist you to fix the issue
 - How to user this?
-- - Go to the shell terminal and copy the link from this repo and paste in your installation environment 
+  - Go to the shell terminal and copy the link from this repo and paste in your installation environment 
 
 ### Tested in Linux Ubuntu ###
 
