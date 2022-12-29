@@ -1,6 +1,6 @@
 # Setting Up Infrastructure Ubuntu
 - Incase if you need and issue please call me, will assist you to fix the issue
-- How to user this?
+- How to use this document?
   - Each Installation setup is having document file, refer the document to gain more confidence
   - Copy the link from this repo and paste in your installation environment using temrinal  
 
