@@ -49,6 +49,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/mai
 ###### ***Setting Kubernetes***
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step1_k8s_all_nodes.sh)" #To run in all nodes
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step2_k8s_master_nodes.sh)" #To run on Master Node and follow the on screen instruction
+
 ```
 
 
