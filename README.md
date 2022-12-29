@@ -46,6 +46,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/mai
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/jenkins_installation.sh)"
 ```
 
+###### ***Setting Kubernetes***
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step1_k8s_all_nodes.sh)" #To run in all nodes
+```
+
+
+
 
 ###### ***Installation of Postgre SQL***
 ```
