@@ -2,7 +2,7 @@
 
 sudo kubeadm init
 # OR Collect the master  and run the INitIP Address
-export MASTER_IP=192.168.56.116
+export MASTER_IP=`hostname -I | awk '{print $2}'`
 sudo kubeadm init --apiserver-advertise-address=${MASTER_IP} --pod-network-cidr 10.10.0.0/16
 
 
