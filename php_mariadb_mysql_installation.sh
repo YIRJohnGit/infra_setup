@@ -15,3 +15,4 @@ php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo '
 
 sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
+composer
