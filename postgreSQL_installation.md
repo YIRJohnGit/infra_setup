@@ -107,3 +107,9 @@ SELECT * FROM clients;
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/209463997-572fdc22-0022-41f9-a9d1-d9cf8684c00c.png)
+
+
+# Installation of Post Bird
+```
+sudo snap install postbird
+```
