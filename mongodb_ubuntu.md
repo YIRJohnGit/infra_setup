@@ -78,4 +78,6 @@ sudo service mongod restart # restart the MOngodb Service
 
 ```
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.30.1_amd64.deb
+sudo apt install -y ./mongodb-compass_*_amd64.deb
+sudo dpkg -i mongodb-compass_1.30.1_amd64.deb
 ```
