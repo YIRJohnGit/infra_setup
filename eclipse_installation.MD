@@ -10,3 +10,15 @@ sudo apt-get install -y openjdk-11-jre openjdk-11-jdk
 sudo apt install default-jre
 sudo snap install --classic eclipse
 ```
+
+```
+sudo snap install --classic code
+```
+
+OPTION 2
+```
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install -y code
+code --version
+```
