@@ -73,3 +73,9 @@ sudo service mongod status # Get the STatus of the MOngodb Servive
 sudo service mongod stop # Stop the MOngodb Service
 sudo service mongod restart # restart the MOngodb Service
 ```
+
+# Setting Up MongoDB Compose
+
+```
+wget https://downloads.mongodb.com/compass/mongodb-compass_1.30.1_amd64.deb
+```
