@@ -46,3 +46,20 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer
 composer
 ```
 ![image](https://user-images.githubusercontent.com/111234771/210087838-a8da959f-ce1c-4e38-b774-82560c8c4973.png)
+
+
+# Troubleshooting - Unable to See the PHP Out on Web URL
+
+```
+cat -n /etc/apache2/httpd.conf
+OR
+cat -n  /etc/apache2/apache2.conf
+OR
+cat -n /etc/httpd/httpd.conf
+OR
+cat -n /etc/httpd/conf/httpd.conf
+```
+_Result of FILE lOCATION_
+![image](https://user-images.githubusercontent.com/111234771/210127889-846e5f47-b659-4cad-81ba-775369fc6d24.png)
+
+
