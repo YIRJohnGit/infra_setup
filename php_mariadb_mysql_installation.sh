@@ -6,10 +6,13 @@ sudo systemctl restart apache2
 apt-cache show php-cli # to find out what the php-cli module does
 sudo apt-get install -y php-cli # Install Pacakages
 sudo apt install -y php-mbstring
+
 export PHP_VER=7.4
 sudo apt -y install php$PHP_VER-fpm php$PHP_VER-bcmath php$PHP_VER-curl php$PHP_VER-gd php$PHP_VER-mbstring php$PHP_VER-mysql php$PHP_VER-xml php$PHP_VER-zip
+sudo apt -y install phpmyadmin 
 
-
+echo "BELOW FUNCTIONS ARE YET TO TEST...."
+echo "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 echo "https://www.cloudbooklet.com/how-to-install-php-fpm-with-apache-on-ubuntu-20-04/"
 echo "Configure Apache with PHP-FPM"
 echo "*****************************"
@@ -84,6 +87,10 @@ Paste the following.
 <?php phpinfo();
 
 "
+
+echo "Setting up Composser - Worked"
+echo "============================="
+
 cd ~
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 HASH=`curl -sS https://composer.github.io/installer.sig`
