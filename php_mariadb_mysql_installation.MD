@@ -100,7 +100,7 @@ sudo systemctl status mysql.service
 # Need work on this
 https://linuxhint.com/check-mysql-status-ubuntu/
 ```
-__Remove the MYSql - Working Set of Command__
+__Remove the MySql - Working Set of Command__
 ```
 sudo -i
 service mysql stop
