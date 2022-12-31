@@ -62,4 +62,23 @@ cat -n /etc/httpd/conf/httpd.conf
 _Result of File Location_
 ![image](https://user-images.githubusercontent.com/111234771/210127889-846e5f47-b659-4cad-81ba-775369fc6d24.png)
 
+-Check the Log Details
+```
+cat -n /var/log/apache2/error.log
+```
 
+### Solution 1 - Not Worked
+- sudo nano /etc/apache2/apache2.conf
+- Make the Changes in the following
+_Changes from this_![image](https://user-images.githubusercontent.com/111234771/210128221-bb82ae91-33f4-48c1-9df5-581de2a80a93.png)
+_to this_ ![image](https://user-images.githubusercontent.com/111234771/210128383-83d3fd76-6510-48df-9906-9475e8f95ba1.png)
+- After Changes reboot
+```
+sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod php7.4
+```
+
+# Troubleshooting - Remove complete PHP and its content
+
+```
+sudo apt-get -y purge 'php*'
+```
