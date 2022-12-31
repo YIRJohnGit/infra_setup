@@ -59,7 +59,7 @@ cat -n /etc/httpd/httpd.conf
 OR
 cat -n /etc/httpd/conf/httpd.conf
 ```
-_Result of FILE lOCATION_
+_Result of File Location_
 ![image](https://user-images.githubusercontent.com/111234771/210127889-846e5f47-b659-4cad-81ba-775369fc6d24.png)
 
 
