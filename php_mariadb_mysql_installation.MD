@@ -114,3 +114,9 @@ rm -rf /etc/apparmor.d/abstractions/mysql /etc/apparmor.d/cache/usr.sbin.mysqld 
 updatedb
 exit
 ```
+___Remove all the the *mysql*___
+```
+sudo apt-get remove --purge *mysql\*
+sudo apt-get autoremove
+sudo apt-get autoclean
+```
