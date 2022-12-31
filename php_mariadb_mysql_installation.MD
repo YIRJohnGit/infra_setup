@@ -14,6 +14,26 @@ desc mysql.user;
 _Result of Structure Details _
 ![image](https://user-images.githubusercontent.com/111234771/210124870-a5cc2215-917d-42d6-a75a-aad77521e56e.png)
 
+```
+mysql --version # Get the MySql Version running in machine
+sudo systemctl stop mysql.service
+sudo systemctl status mysql.service
+sudo systemctl set-environment MYSQLD_OPTS="--skip-networking --skip-grant-tables" # Skip Grant Tables & Networking
+sudo systemctl restart mysql.service
+sudo systemctl status mysql.service
+
+sudo mysql -u root
+flush privileges;
+
+USE mysql;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root@1234';
+quit
+sudo killall -u mysql # Kill all MySQL processes 
+sudo systemctl restart mysql.service # Restart the MySQL service
+sudo systemctl status mysql.service 
+
+sudo mysql -u root -p
+```
 
 ## Setting Up Composser
 
