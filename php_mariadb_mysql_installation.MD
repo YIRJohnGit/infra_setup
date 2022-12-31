@@ -78,7 +78,20 @@ sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod php7.4
 ```
 
 # Troubleshooting - Remove complete PHP and its content
-
+- __Removing PHP__
 ```
 sudo apt-get -y purge 'php*'
+OR
+sudo apt-get purge `dpkg -l | grep php| awk '{print $2}' |tr "\n" " "`
+sudo apt -y autoremove
+
+sudo apt-get purge apache2 php5 libapache2-mod-php5 mysql-server libapache2-mod-auth-mysql php5-mysql phpmyadmin
+
+cd /
+sudo find -name "php"
+```
+
+- __Removing Mysql__
+```
+sudo apt-get autoclean
 ```
