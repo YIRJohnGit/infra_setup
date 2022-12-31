@@ -94,4 +94,10 @@ sudo find -name "php"
 - __Removing Mysql__
 ```
 sudo apt-get autoclean
+sudo systemctl status mysql.service
+
+
+# Need work on this
+https://linuxhint.com/check-mysql-status-ubuntu/
+
 ```
