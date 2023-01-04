@@ -3,7 +3,12 @@
 
 ```
 sudo apt update
-sudo apt install -y default-jre              # version 2:1.11-72build1, or
+sudo apt install -y default-jre
+echo "OR"
+echo "sudo apt install -y openjdk-11-jre-headless"
+echo "OR"
+echo "sudo apt install -y openjdk-8-jre-headless"
+
 java --version
 ```
 ```
