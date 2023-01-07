@@ -81,6 +81,25 @@ _Result_
     - Go to Web URL and start with your IP and port number is 8080
     - http://192.168.182.20:8080/
 
+### Create a User
+- yir-john
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/211172776-96863ec7-a9a3-4c89-bcc1-f509c5c08125.png)
+
+
+### Adding the Plugins
+- Docker Pipeline
+- Kubernetes Continuous Deploy (take lower version2.3.1) 
+  -  (https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUZCOGZZTXlZWk02MEZRYnpzVTZqN3hzNVo3d3xBQ3Jtc0tuVHIzd2VWX2tqNnlTeFRlcnUzRmlsOUNaZnMxSjFSc1l4cWVWOGJkOXJkckxacDA2cXpqTWRscWxJNC1XcUJpUkg4eW42MFd4aC1WcnB0SW5WWGhtcl9wMFlORnBDVGtNS0llMU5mNkQ0UXJGdDRnTQ&q=https%3A%2F%2Fupdates.jenkins.io%2Fdownload%2Fplugins%2Fkubernetes-cd%2F1.0.0%2Fkubernetes-cd.hpi&v=XE_mAhxZpwU)
+- Github Reference
+  - Collect the Node Project form he Git
+    - https://github.com/shazforiot/nodeapp_test
+_Docker Plugin Installed_
+![image](https://user-images.githubusercontent.com/111234771/211172853-ab8a03c5-19ea-403a-92a5-af0e28e0aaf8.png)
+
+_Kubernetes Plugin Installed_
+![image](https://user-images.githubusercontent.com/111234771/211173004-c0bd5f4c-195a-4fbb-aa64-d74c088f8bfb.png)
+
 # Verify Jenking Status
 ```
 sudo systemctl status jenkins
