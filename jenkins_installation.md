@@ -61,10 +61,19 @@ sudo docker run -u 0 --privileged --name jenkins -it -d -p 8080:8080 -p 50000:50
 -v $(which docker):/usr/bin/docker \
 -v /home/jenkins_home:/var/jenkins_home \
 jenkins/jenkins:latest
-sudo docker ps # Verify The Docker Container
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/211172372-07241d10-7174-4ae5-9158-dd93c56b791c.png)
+
+- Verify the Installation and Get Log Details
+```
+sudo docker ps # Verify The Docker Container
+sudo docker logs -f 555576e8da36
+```
+![image](https://user-images.githubusercontent.com/111234771/211172460-3906aae9-3cc0-4d8d-b741-fffc087a6ba6.png)
+- Collection Initial Login Password after Installation
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/211172533-9ea51807-ed47-4ee8-b2d1-ef799c5f383e.png)
 
 
 # Verify Jenking Status
