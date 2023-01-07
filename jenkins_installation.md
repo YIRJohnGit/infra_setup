@@ -56,13 +56,15 @@ sudo apt install jenkins -y
 # Installation Method 4
 - Installation of Jenkins in the Docker
 ```
-docker run -u 0 --privileged --name jenkins -it -d -p 8080:8080 -p 50000:50000 \
--v /var/run/docker.sock:var/run/docker.sock \
--v $(which docker) :/usr/bin/docker \
+sudo docker run -u 0 --privileged --name jenkins -it -d -p 8080:8080 -p 50000:50000 \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v $(which docker):/usr/bin/docker \
 -v /home/jenkins_home:/var/jenkins_home \
 jenkins/jenkins:latest
-
 ```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/211172372-07241d10-7174-4ae5-9158-dd93c56b791c.png)
+
 
 # Verify Jenking Status
 ```
