@@ -6,6 +6,15 @@
 
 ### Tested in Linux Ubuntu ###
 
+###### ***Setting Up Hostname***
+```
+sudo hostnamectl set-hostname jenkins-yir.com   # Set the Hostname for the master node
+exec bash
+```
+_Result_
+
+![image](https://user-images.githubusercontent.com/111234771/211171282-d34816f2-8cf5-4fe9-a1ef-b6628c0bea0e.png)
+
 ###### ***Setting Up Default Git and curl***
 ```
 sudo apt install -y git curl
@@ -52,10 +61,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/mai
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step2_k8s_master_nodes.sh)" #To run on Master Node and follow the on screen instruction
 
 ```
-
-
-
-
 ###### ***Installation of Postgre SQL***
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/postgreSQL_installation.sh)"
