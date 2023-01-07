@@ -61,6 +61,7 @@ sudo docker run -u 0 --privileged --name jenkins -it -d -p 8080:8080 -p 50000:50
 -v $(which docker):/usr/bin/docker \
 -v /home/jenkins_home:/var/jenkins_home \
 jenkins/jenkins:latest
+sudo docker ps # Verify The Docker Container
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/211172372-07241d10-7174-4ae5-9158-dd93c56b791c.png)
