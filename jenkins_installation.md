@@ -75,6 +75,11 @@ sudo docker logs -f 555576e8da36
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/211172533-9ea51807-ed47-4ee8-b2d1-ef799c5f383e.png)
 
+### Verify in GUI
+- get the IP Addres of your machine
+  - ip a
+    - Go to Web URL and start with your IP and port number is 8080
+    - http://192.168.182.20:8080/
 
 # Verify Jenking Status
 ```
