@@ -62,6 +62,22 @@ _Result_
 sudo apt update
 sudo apt install -y jenkins
 ```
+_Result of Successfull Instllation_
+![image](https://user-images.githubusercontent.com/111234771/211499604-d67f22ce-904a-4269-ab3f-f49763dffe48.png)
+
+_Verify the Status of the Jenkins_
+```
+sudo systemctl status jenkins
+```
+![image](https://user-images.githubusercontent.com/111234771/211499944-3fbb4ccf-91d0-4071-b839-b6f4773e0b10.png)
+
+_Get the Secret Code_
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+__fcbfd36135e84f79a4a68f522f8b1426__
+
+- access the application in browser by navigating to http://localhost:8080
 
 # Installation Method 4
 ## Installation of Jenkins in the Docker
