@@ -45,12 +45,22 @@ systemctl start jenkins
 systemctl status jenkins
 ```
 
-# Installation Method 3
+# Method 3 - Installation on Ubuntu
 ```
-curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc &gt; /dev/null
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list &gt; /dev/null
+sudo curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/211477226-f9e42fb6-79db-4293-a4cb-1f6b761415f5.png)
+
+```
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/211477363-965a9b43-c09b-4dd7-9e7c-83b6ba6595d9.png)
+
+```
 sudo apt update
-sudo apt install jenkins -y
+sudo apt install -y jenkins
 ```
 
 # Installation Method 4
