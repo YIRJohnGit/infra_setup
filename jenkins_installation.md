@@ -78,6 +78,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 __fcbfd36135e84f79a4a68f522f8b1426__
 
 - access the application in browser by navigating to http://localhost:8080
+![image](https://user-images.githubusercontent.com/111234771/211503815-eeefb003-98e3-4348-b623-183ec9e3f0d8.png)
+
 
 # Installation Method 4
 ## Installation of Jenkins in the Docker
