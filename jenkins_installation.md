@@ -170,3 +170,34 @@ sudo updatedb
 sudo locate -b '\pack200'
 ```
 
+
+# Installation of Jenkis CLI
+```
+cd ~/Downloads
+wget http://192.168.182.20:8080/jnlpJars/jenkins-cli.jar
+java -jar jenkins-cli.jar -s http://localhost:8080/ who-am-i
+```
+```
+java -jar jenkins-cli.jar -s http://localhost:8080/ install-plugin pipeline-utility-steps
+java -jar jenkins-cli.jar -s http://localhost:8080/ help
+```
+![image](https://user-images.githubusercontent.com/111234771/211526602-0b2057ef-ed12-4d69-a787-02f8e866ea45.png)
+
+- Create New Jenkins Collect the Tokaen
+```
+115cb0367daae601c4c0ce40b0735d2b98
+````
+- create a file called creds
+- add the below content and save 
+- yirjohn:115cb0367daae601c4c0ce40b0735d2b98
+
+```
+java -jar jenkins-cli.jar -s http://localhost:8080/ -auth @creds install-plugin pipeline-utility-steps
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/211530445-882f7d83-b8b3-4dd6-929c-6bffa65b1c2d.png)
+
+_Restartign Jenkins_
+```
+java -jar jenkins-cli.jar -s http://localhost:8080/ -auth @creds safe-restart
+```
