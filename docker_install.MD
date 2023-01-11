@@ -10,6 +10,4 @@ docker compose version
 docker --version
 docker version
 sudo docker pull nginx
-
-
 ```
