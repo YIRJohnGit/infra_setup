@@ -21,5 +21,11 @@ _Result_
 sudo apt install -y mariadb-server
 sudo systemctl status mariadb.service
 sudo systemctl start mariadb.service
-
 ```
+
+### Securing the Mysql
+```
+sudo mysql_secure_installation
+```
+_Result_
+![image](https://user-images.githubusercontent.com/111234771/212994455-a3735eb4-36cb-41bd-a0db-fa3979699b4b.png)
