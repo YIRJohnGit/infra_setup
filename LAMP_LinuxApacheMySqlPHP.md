@@ -26,6 +26,9 @@ sudo systemctl start mariadb.service
 ### Securing the Mysql
 ```
 sudo mysql_secure_installation
+sudo systemctl status mariadb
 ```
 _Result_
 ![image](https://user-images.githubusercontent.com/111234771/212994455-a3735eb4-36cb-41bd-a0db-fa3979699b4b.png)
+
+## Step 3: Install PHP
