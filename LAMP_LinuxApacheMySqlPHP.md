@@ -56,3 +56,17 @@ sudo nano /var/www/html/info.php
 export PHP_VER=7.4
 sudo apt -y install php$PHP_VER-fpm php$PHP_VER-bcmath php$PHP_VER-curl php$PHP_VER-gd php$PHP_VER-mbstring php$PHP_VER-mysql php$PHP_VER-xml php$PHP_VER-zip
 ```
+
+```
+sudo a2dissite 000-default # Disable the default Apache vhost configuration
+sudo a2dismod php7.4 # Disable any default preform modules for any existing PHP versions
+sudo a2dismod mpm_prefork # Disable Apache Prefork module.
+sudo a2enmod mpm_event proxy_fcgi setenvif # Enable Apache Event module
+sudo a2enconf php7.4-fpm # enable PHP-FPM configuration
+
+sudo service php7.4-fpm restart
+sudo service php7.4-fpm status
+```
+![image](https://user-images.githubusercontent.com/111234771/212998036-c8365f68-970b-4bef-80a8-3ef7b9ea72d8.png)
+
+
