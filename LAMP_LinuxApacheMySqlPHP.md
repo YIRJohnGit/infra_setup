@@ -69,4 +69,7 @@ sudo service php7.4-fpm status
 ```
 ![image](https://user-images.githubusercontent.com/111234771/212998036-c8365f68-970b-4bef-80a8-3ef7b9ea72d8.png)
 
-
+**Installation of PHPMyAdmin**
+```
+sudo apt -y install phpmyadmin 
+```
