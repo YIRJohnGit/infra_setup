@@ -32,3 +32,11 @@ _Result_
 ![image](https://user-images.githubusercontent.com/111234771/212994455-a3735eb4-36cb-41bd-a0db-fa3979699b4b.png)
 
 ## Step 3: Install PHP
+
+```
+sudo apt-get install -y php libapache2-mod-php  php-mysql unzip
+sudo nano /etc/apache2/mods-enabled/dir.conf
+
+sudo systemctl restart apache2
+```
+![image](https://user-images.githubusercontent.com/111234771/212996152-2b054363-3721-4fb7-b3c5-c2c00cf800f2.png)
