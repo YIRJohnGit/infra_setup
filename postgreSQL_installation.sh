@@ -7,7 +7,10 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs
 sudo apt update
 sudo apt install -y postgresql postgresql-contrib
 
+
 sudo systemctl status postgresql
 
 echo "to Quit postgre cli \q" 
 sudo -u postgres psql
+
+
