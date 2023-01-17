@@ -18,7 +18,7 @@ _Result_
 ## Step 2: Install MySQL and Create a Database
 
 ```
-sudo apt install -y mariadb-server
+sudo apt install -y mariadb-server mariadb-client
 sudo systemctl status mariadb.service
 sudo systemctl start mariadb.service
 ```
@@ -68,6 +68,34 @@ sudo service php7.4-fpm restart
 sudo service php7.4-fpm status
 ```
 ![image](https://user-images.githubusercontent.com/111234771/212998036-c8365f68-970b-4bef-80a8-3ef7b9ea72d8.png)
+
+
+**Resetting Password**
+```
+sudo /etc/init.d/mysql stop
+or
+sudo /etc/init.d/mysqld stop
+```
+- Starting MySql without Password
+```
+sudo mysqld_safe --skip-grant-tables &
+
+mysql -u root
+```
+**Set a new MySQL root password**
+```
+use mysql;
+update user set authentication_string=PASSWORD("mynewpassword") where User='root';
+flush privileges;
+quit
+```
+```
+sudo /etc/init.d/mysql stop
+sudo /etc/init.d/mysql start
+systemctl status mariadb.service
+mysql -u root -p
+```
+<hr>
 
 **Installation of PHPMyAdmin**
 ```
