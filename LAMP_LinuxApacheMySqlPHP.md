@@ -40,3 +40,19 @@ sudo nano /etc/apache2/mods-enabled/dir.conf
 sudo systemctl restart apache2
 ```
 ![image](https://user-images.githubusercontent.com/111234771/212996152-2b054363-3721-4fb7-b3c5-c2c00cf800f2.png)
+
+**Get List of Available php Module**
+```
+apt-cache search php- | less
+apt-cache show php7.4-tidy
+sudo apt install -y php7.4-tidy
+sudo systemctl restart apache2
+```
+
+```
+sudo nano /var/www/html/info.php
+```
+```
+export PHP_VER=7.4
+sudo apt -y install php$PHP_VER-fpm php$PHP_VER-bcmath php$PHP_VER-curl php$PHP_VER-gd php$PHP_VER-mbstring php$PHP_VER-mysql php$PHP_VER-xml php$PHP_VER-zip
+```
