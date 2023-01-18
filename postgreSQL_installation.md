@@ -124,4 +124,11 @@ sudo apt install -y pgadmin4
 sudo /usr/pgadmin4/bin/setup-web.sh
 ```
 - Verify in url - 185.185.185.185/pgadmin4
-- 
+
+
+
+# Troubleshooting 1 - Unable to access using IP Address
+
+```
+sudo nano /etc/postgresql/15/main/postgresql.conf
+```
