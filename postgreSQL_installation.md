@@ -149,3 +149,12 @@ _Final View_
 ```
 /etc/init.d/postgresql restart
 ```
+
+**Start the Terminal**
+```
+psql -d <db-name> -h <your-host-ip-address> -U <postgre-user-name>
+psql -d test_erp -h 192.168.182.16 -U postgres
+```
+
+_Result View_
+![image](https://user-images.githubusercontent.com/111234771/213266776-65b3da81-329f-4e12-9ea9-ba5814e7b778.png)
