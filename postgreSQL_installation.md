@@ -131,4 +131,21 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 
 ```
 sudo nano /etc/postgresql/15/main/postgresql.conf
+#change this #listen_addresses = 'localhost' to this listen_addresses = '*' then save and exit
+```
+_Final View_
+![image](https://user-images.githubusercontent.com/111234771/213263098-8494b875-e4f1-46a7-b3b5-0e0226c993ce.png)
+
+```
+sudo vi /etc/postgresql/15/main/pg_hba.conf
+
+add 
+host    all             all              0.0.0.0/0                       md5
+host    all             all              ::/0                            md5
+```
+_Final View_
+![image](https://user-images.githubusercontent.com/111234771/213263504-7b346d8a-255c-4910-9fb9-acddb6e8a57a.png)
+
+```
+/etc/init.d/postgresql restart
 ```
