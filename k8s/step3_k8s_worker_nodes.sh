@@ -5,5 +5,5 @@ echo "sudo kubeadm token create --print-join-command"
 echo "\n\n\n\n"
 echo "Option 2"
 # Copy the Join Detail from the Step2 from screen and paste the same in all the worker nodes with sudo prefix
-# Below is the Sample Code but it will vary in your setup
-# sudo kubeadm join 172.31.32.41:6443 --token 2k92rl.uxyatjxfrr1oc23d --discovery-token-ca-cert-hash sha256:a6486a5374332b81bf130736202594c5098ed3659cf6e01bf9ccbbd80f6dc1ef
+# Below is the Sample Code but it will vary in your setup copy the the joining key afrom master and paste it in worker node with sudo previllage
+echo "sudo kubeadm join 172.31.32.41:6443 --token 2k92rl.uxyatjxfrr1oc23d --discovery-token-ca-cert-hash sha256:a6486a5374332b81bf130736202594c5098ed3659cf6e01bf9ccbbd80f6dc1ef"
