@@ -58,8 +58,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/mai
 ###### ***Setting Kubernetes***
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step1_k8s_all_nodes.sh)" #To run in all nodes
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step2_k8s_master_nodes.sh)" #To run on Master Node and follow the on screen instruction
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step3_k8s_worker_nodes.sh)" #Use this to generate the Joinging and and connect it in your worker node to join the master cluster
 ```
 ###### ***Installation of Postgre SQL***
 ```
