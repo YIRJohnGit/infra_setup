@@ -46,5 +46,5 @@ sudo apt-get install -y kubelet="$KUBE_VERSION" kubeadm="$KUBE_VERSION" kubectl=
 
 sudo apt-mark hold kubelet kubeadm kubectl
 echo "sudo apt-mark unhold kubelet kubeadm kubectl"
-sudo rm /etc/containerd/config.toml
+sudo rm -rf /etc/containerd/config.toml
 sudo systemctl restart containerd
