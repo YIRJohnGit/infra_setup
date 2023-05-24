@@ -7,7 +7,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/mai
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step2_k8s_master_nodes.sh)"
 ```
-
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step3_k8s_worker_nodes.sh)"
+```
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step4_k8s_master_nodes.sh)"
 
