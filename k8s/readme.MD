@@ -1,4 +1,5 @@
 # Kubernetes Installation
+***Last Updated on: 24th May 2023***
 _Run the Script in all the nodes_
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/YIRJohnGit/infra_setup/main/k8s/step1_k8s_all_nodes.sh)"
