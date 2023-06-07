@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "Updated Version on 2023-06-07 and Verfied in Ubuntu 18.04.6 LTS (Bionic Beaver)"
 sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 sudo apt-get update
@@ -34,10 +34,11 @@ sudo systemctl daemon-reload
 
 sudo systemctl restart docker
 
-# sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-# echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B53DC80D13EDEF05
-sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B53DC80D13EDEF05
+# sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 
 sudo apt-get update
 
@@ -46,5 +47,6 @@ sudo apt-get install -y kubelet="$KUBE_VERSION" kubeadm="$KUBE_VERSION" kubectl=
 
 sudo apt-mark hold kubelet kubeadm kubectl
 echo "sudo apt-mark unhold kubelet kubeadm kubectl"
+sudo cp  /etc/containerd/config.toml /etc/containerd/config.toml_bak_$(date +"%Y%m%d_%H%M%S")
 sudo rm -rf /etc/containerd/config.toml
 sudo systemctl restart containerd
